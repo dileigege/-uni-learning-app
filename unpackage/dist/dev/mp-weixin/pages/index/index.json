@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#01aefb",
+  "backgroundColor": "#F8F8F8",
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "uni-icons": "/components/nav_top/uni-icons/uni-icons"
+  }
+}

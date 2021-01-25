@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#01aefb",
+    "backgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "测试开发"
+  },
+  "usingComponents": {}
+}
