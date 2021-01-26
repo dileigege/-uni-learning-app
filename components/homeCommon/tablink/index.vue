@@ -85,7 +85,7 @@
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
-						text-shadow: 1px 2px 9px #6c5b91;
+						text-shadow: 1px 2px 9px #8d78bf;
 					}
 
 				}
@@ -102,7 +102,7 @@
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
-						text-shadow: 1px 2px 9px #2b5a8f;
+						text-shadow: 1px 2px 9px #3b7fc7;
 					}
 				}
 
@@ -118,7 +118,7 @@
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
-						text-shadow: 1px 2px 9px #a77a1e;
+						text-shadow: 1px 2px 9px #d99e26;
 					}
 				}
 

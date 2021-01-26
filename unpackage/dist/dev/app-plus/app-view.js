@@ -255,32 +255,70 @@ var render = function() {
                     "v-uni-swiper-item",
                     { attrs: { _i: 6 } },
                     [
-                      _c("v-uni-view", {
-                        staticClass: _vm._$g(7, "sc"),
-                        attrs: { _i: 7 }
-                      })
-                    ],
-                    1
-                  ),
-                  _c(
-                    "v-uni-swiper-item",
-                    { attrs: { _i: 8 } },
-                    [
-                      _c("v-uni-view", {
-                        staticClass: _vm._$g(9, "sc"),
-                        attrs: { _i: 9 }
-                      })
-                    ],
-                    1
-                  ),
-                  _c(
-                    "v-uni-swiper-item",
-                    { attrs: { _i: 10 } },
-                    [
-                      _c("v-uni-view", {
-                        staticClass: _vm._$g(11, "sc"),
-                        attrs: { _i: 11 }
-                      })
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+                            [
+                              _c(
+                                "v-uni-text",
+                                {
+                                  staticClass: _vm._$g(9, "sc"),
+                                  attrs: { _i: 9 }
+                                },
+                                [_vm._v("四年级学霸养成营课程15节")]
+                              ),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(10, "sc"),
+                                  attrs: { _i: 10 }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g(11, "sc"),
+                                      attrs: { _i: 11 }
+                                    },
+                                    [_vm._v("￥")]
+                                  ),
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g(12, "sc"),
+                                      attrs: { _i: 12 }
+                                    },
+                                    [_vm._v("1.1")]
+                                  ),
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g(13, "sc"),
+                                      attrs: { _i: 13 }
+                                    },
+                                    [_vm._v("￥199")]
+                                  )
+                                ],
+                                1
+                              ),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(14, "sc"),
+                                  attrs: { _i: 14 }
+                                },
+                                [_vm._v("我要学")]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -1299,7 +1337,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 20);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.CourseEntrance-box[data-v-c394a430] {\r\n  position: absolute;\r\n  background-color: #fff;\r\n  width: 85%;\r\n  top: 10px;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%);\r\n          transform: translate(-50%);\r\n  padding: 25rpx 35rpx;\r\n  border-radius: 15rpx;\r\n  box-shadow: 1px 2px 9px #e2e2e2;\n}\n.CourseEntrance-box .CourseEntrance-box-Title .Bo[data-v-c394a430] {\r\n  font-weight: 800;\r\n  font-size: 38rpx;\r\n  color: #333;\r\n  padding-right: 25rpx;\n}\n.CourseEntrance-box .CourseEntrance-box-Title .Lo[data-v-c394a430] {\r\n  font-weight: 600;\r\n  font-size: 25rpx;\r\n  color: #999;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline[data-v-c394a430] {\r\n  float: left;\r\n  margin: 30rpx 15rpx;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line1[data-v-c394a430] {\r\n  background-color: #bfa0fe;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line1 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #6c5b91;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line2[data-v-c394a430] {\r\n  background-color: #4da0ff;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line2 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #2b5a8f;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line3[data-v-c394a430] {\r\n  background-color: #fdbb2f;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line3 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #a77a1e;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .taba[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-weight: 900;\r\n  font-size: 30rpx;\r\n  padding-top: 15rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.CourseEntrance-box[data-v-c394a430] {\r\n  position: absolute;\r\n  background-color: #fff;\r\n  width: 85%;\r\n  top: 10px;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%);\r\n          transform: translate(-50%);\r\n  padding: 25rpx 35rpx;\r\n  border-radius: 15rpx;\r\n  box-shadow: 1px 2px 9px #e2e2e2;\n}\n.CourseEntrance-box .CourseEntrance-box-Title .Bo[data-v-c394a430] {\r\n  font-weight: 800;\r\n  font-size: 38rpx;\r\n  color: #333;\r\n  padding-right: 25rpx;\n}\n.CourseEntrance-box .CourseEntrance-box-Title .Lo[data-v-c394a430] {\r\n  font-weight: 600;\r\n  font-size: 25rpx;\r\n  color: #999;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline[data-v-c394a430] {\r\n  float: left;\r\n  margin: 30rpx 15rpx;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line1[data-v-c394a430] {\r\n  background-color: #bfa0fe;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line1 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #8d78bf;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line2[data-v-c394a430] {\r\n  background-color: #4da0ff;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line2 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #3b7fc7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line3[data-v-c394a430] {\r\n  background-color: #fdbb2f;\r\n  text-align: center;\r\n  padding: 45rpx 32rpx;\r\n  font-size: 20rpx;\r\n  font-weight: 800;\r\n  border-radius: 10rpx;\r\n  box-shadow: 1px 2px 9px #c7c7c7;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .line3 .fontstyle[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-size: 90rpx;\r\n  font-weight: 300;\r\n  text-shadow: 1px 2px 9px #d99e26;\n}\n.CourseEntrance-box .CourseEntrance-box-list .discipline .taba[data-v-c394a430] {\r\n  color: #FFFFFF;\r\n  font-weight: 900;\r\n  font-size: 30rpx;\r\n  padding-top: 15rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1354,7 +1392,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../static/Snipast
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/* 声明清除浮动的样式 */\n.clearfix:before,\r\n.clearfix:after {\r\n  content: \"\";\r\n  display: table;\n}\n.clearfix:after {\r\n  clear: both;\n}\r\n/* ie6 7 专门清除浮动的样式*/\n.clearfix {\r\n  *zoom: 1;\n}\n#Home {\r\n  background-color: #f9f9f9;\n}\n#Home .CourseEntrance {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  height: 150rpx;\n}\n#Home .ActivityCarousel {\r\n  margin-top: 300rpx;\n}\n#Home .ActivityCarousel .uni-margin-wrap {\r\n  width: 690rpx;\r\n  margin: 0 30rpx;\n}\n#Home .ActivityCarousel .swiper {\r\n  height: 300rpx;\n}\n#Home .ActivityCarousel .swiper-item {\r\n  position: absolute;\r\n  display: block;\r\n  height: 300rpx;\r\n  line-height: 300rpx;\r\n  text-align: center;\n}\n#Home .ActivityCarousel .swiper-list {\r\n  margin-top: 40rpx;\r\n  margin-bottom: 0;\n}\n#Home .ActivityCarousel .uni-common-mt {\r\n  margin-top: 60rpx;\r\n  position: relative;\n}\n#Home .ActivityCarousel .info {\r\n  position: absolute;\r\n  right: 20rpx;\n}\n#Home .ActivityCarousel .uni-padding-wrap {\r\n  width: 550rpx;\r\n  padding: 0 100rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/* 声明清除浮动的样式 */\n.clearfix:before,\r\n.clearfix:after {\r\n  content: \"\";\r\n  display: table;\n}\n.clearfix:after {\r\n  clear: both;\n}\r\n/* ie6 7 专门清除浮动的样式*/\n.clearfix {\r\n  *zoom: 1;\n}\n#Home {\r\n  background-color: #f9f9f9;\n}\n#Home .CourseEntrance {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  height: 150rpx;\n}\n#Home .ActivityCarousel {\r\n  margin-top: 300rpx;\n}\n#Home .ActivityCarousel .uni-margin-wrap {\r\n  width: 690rpx;\r\n  margin: 0 30rpx;\n}\n#Home .ActivityCarousel .uni-margin-wrap .swiper {\r\n  height: 300rpx;\n}\n#Home .ActivityCarousel .uni-margin-wrap .swiper .swiper-item {\r\n  position: absolute;\r\n  display: block;\n}\n#Home .ActivityCarousel .uni-margin-wrap .swiper .swiper-item .activity-title {\r\n  background-color: #f96029;\r\n  color: #FFFFFF;\r\n  padding: 10rpx 35rpx;\r\n  width: 690rpx;\n}\n#Home .ActivityCarousel .uni-margin-wrap .swiper .swiper-item .activity-title .title {\r\n  font-size: 38rpx;\r\n  font-weight: 800;\n}\n#Home .ActivityCarousel .uni-margin-wrap .swiper .swiper-list {\r\n  margin-top: 40rpx;\r\n  margin-bottom: 0;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

@@ -15,19 +15,19 @@
 				<swiper class="swiper" circular :indicator-dots="true" :autoplay="false" :interval="2000">
 					<swiper-item>
 						<view class="swiper-item">
-							
+							<view class="activity-title">
+								<text class="title"> 四年级学霸养成营课程15节 </text>
+								<view class="text">
+									<text class="fontsize1">￥</text> <text class="fontsize2"> 1.1 </text> <text class="fontsize3"> ￥199 </text>
+								</view>
+
+								<view class="button">
+									我要学
+								</view>
+							</view>
 						</view>
 					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item">
-							
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item">
-							
-						</view>
-					</swiper-item>
+
 				</swiper>
 			</view>
 		</view>
@@ -65,7 +65,7 @@
 			};
 		},
 		methods: {
-			
+
 		}
 	}
 </script>
@@ -97,49 +97,102 @@
 		background-color: #f9f9f9;
 
 		.CourseEntrance {
-			// background-color: $topColor;
 			background-image: url(../../static/Snipaste_2.jpg);
 			height: 150rpx;
 		}
 
 		.ActivityCarousel {
 			margin-top: 300rpx;
-			
+
 			.uni-margin-wrap {
 				width: 690rpx;
 				margin: 0 30rpx;
-			}
-			.swiper {
-				height: 300rpx;
+
+				.swiper {
+					height: 300rpx;
+
+					.swiper-item {
+						position: absolute;
+						display: block;
+
+						.activity-title {
+							background-color: #f96029;
+							color: #FFFFFF;
+							padding: 10rpx 35rpx;
+							width: 630rpx;
+							border-radius: 15rpx 15rpx 0 0 ;
+							.title {
+								font-size: 38rpx;
+								font-weight: 800;
+							}
+							.text {
+								padding-top: 15rpx;
+								.fontsize1 {
+									font-size: 22rpx;
+									font-weight: 600;
+								
+								}
+
+								.fontsize2 {
+									font-size: 60rpx;
+									font-weight: 600;
+									color: #fff512;
+									vertical-align: text-top;
+									padding:  15rpx;
+								}
+
+								.fontsize3 {
+									font-size: 22rpx;
+									font-weight: 600;
+									color: #fff512;
+								}
+							}
+							.button{
+								background-color: #fff512;
+								display: inline-block;
+								padding: 15rpx 45rpx;
+								border-radius: 45rpx;
+								color: #6d3e1c;
+								font-size: 20rpx;
+								position: absolute;
+								top: 55rpx;
+								right: 15rpx;
+
+							}
+							
+						}
+
+					}
+
+
+					.swiper-list {
+						margin-top: 40rpx;
+						margin-bottom: 0;
+					}
+
+					// .uni-common-mt {
+					// 	margin-top: 60rpx;
+					// 	position: relative;
+					// }
+
+					// .info {
+					// 	position: absolute;
+					// 	right: 20rpx;
+					// }
+
+					// .uni-padding-wrap {
+					// 	width: 550rpx;
+					// 	padding: 0 100rpx;
+					// }
+
+				}
 			}
 
-			.swiper-item {
-				position: absolute;
-				display: block;
-				height: 300rpx;
-				line-height: 300rpx;
-				text-align: center;
-			}
 
-			.swiper-list {
-				margin-top: 40rpx;
-				margin-bottom: 0;
-			}
 
-			.uni-common-mt {
-				margin-top: 60rpx;
-				position: relative;
-			}
 
-			.info {
-				position: absolute;
-				right: 20rpx;
-			}
 
-			.uni-padding-wrap {
-				width: 550rpx;
-				padding: 0 100rpx;
-			}
+
 		}
 
 	}
