@@ -5,10 +5,14 @@
 			"style": {
 				"navigationBarBackgroundColor": "#01aefb",
 				"backgroundColor": "#F8F8F8",
-				"navigationBarTitleText": "首页",
+				// "navigationStyle": "custom",
+				// "transparent":"float",
 				"app-plus":{
 					// 导航栏配置
 					"titleNView":{
+						// "blurEffect":"light",
+						"backgroundImage":"/static/Snipaste_2.jpg",
+						"backgroundRepeat":"repeat",
 						// 搜索框 
 						"searchInput":{
 							"borderRadius": "45px",
@@ -23,10 +27,10 @@
 								"color":"#FFFFFF",
 								"colorPressed":"#46c4fd",
 								"float":"right",
-								"select": true,
-								"text": "二年级",
-								"fontSize":"14px",
-								"width":"auto"
+								"fontSize":"34px",
+								"width":"auto",
+								"fontSrc":"/static/iconfont.ttf",
+								"text":"\ue60f"
 							}
 							
 						]

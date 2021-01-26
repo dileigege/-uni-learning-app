@@ -18,4 +18,5 @@
 	/* 动画css  */
 	@import url("./common/css/animate.css");
 	/*  */
+	@import url("./common/css/icon.css")
 </style>

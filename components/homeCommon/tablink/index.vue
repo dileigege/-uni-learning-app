@@ -1,12 +1,13 @@
 <template>
-	<view class="CourseEntrance-box">
+	<view class="CourseEntrance-box clearfix">
 		<view class="CourseEntrance-box-Title">
 			<text class="Bo"> 同步教辅 </text> <text class="Lo"> 全科全面的学习工具 </text>
 		</view>
 		<view class="CourseEntrance-box-list clearfix">
 			<view class="discipline " v-for="(item,index) in CourseEntranceData">
 				<view :class="'line'+item.id">
-					<uniIcons class="input-uni-icon" :type="item.type" size="45" color="#fff" />
+					<!-- <uniIcons class="input-uni-icon" :type="item.type" size="45" color="#fff" /> -->
+					<text class="iconfont fontstyle" :class="item.type"> </text>
 					<view class="taba"> {{item.title}} </view>
 				</view>
 			</view>
@@ -42,7 +43,7 @@
 	.CourseEntrance-box {
 		position: absolute;
 		background-color: $bgcColor;
-		width: 80%;
+		width: 85%;
 		top: 10px;
 		left: 50%;
 		transform: translate(-50%);
@@ -69,49 +70,59 @@
 
 			.discipline {
 				float: left;
-
-
 				// background-color: #E5E5E5;
-
+				margin: 30rpx 15rpx;
+				
 				.line1 {
-
 					background-color: #bfa0fe;
 					text-align: center;
-					margin: 30rpx 15rpx;
-					padding: 45rpx 29rpx;
+					padding: 45rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
+					.fontstyle{
+						color: #FFFFFF;
+						font-size: 90rpx;
+						font-weight: 300;
+						text-shadow: 1px 2px 9px #6c5b91;
+					}
 
 				}
 
 				.line2 {
 					background-color: #4da0ff;
 					text-align: center;
-					margin: 30rpx 10rpx;
-					padding: 45rpx 29rpx;
+					padding: 45rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
+					.fontstyle{
+						color: #FFFFFF;
+						font-size: 90rpx;
+						font-weight: 300;
+						text-shadow: 1px 2px 9px #2b5a8f;
+					}
 				}
 
 				.line3 {
 					background-color: #fdbb2f;
 					text-align: center;
-					margin: 30rpx 10rpx;
-					padding: 45rpx 29rpx;
+					padding: 45rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
+					.fontstyle{
+						color: #FFFFFF;
+						font-size: 90rpx;
+						font-weight: 300;
+						text-shadow: 1px 2px 9px #a77a1e;
+					}
 				}
 
-				.input-uni-icon {
-					font-weight: 900;
-					text-shadow: 1px 2px 9px #5f5f5f;
-				}
+
 
 				.taba {
 					color: #FFFFFF;
@@ -125,6 +136,14 @@
 
 
 		}
-
+		// .Moreubjects{
+		// 	position: absolute;
+		// 	right: 0;
+		// 	background-color: $topColor;
+		// 	padding: 10rpx 35rpx;
+		// 	border-radius: 45rpx;
+		// 	color: $bgcColor;
+		// 	box-shadow: 1px 2px 9px #e2e2e2;
+		// }
 	}
 </style>
