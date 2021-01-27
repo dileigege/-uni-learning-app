@@ -8,39 +8,22 @@
 			<tabLink :CourseEntranceData='CourseEntranceData' :id='id' :type='type' :title='title'>
 			</tabLink>
 		</view>
-
 		<!-- 课程活动轮播  开始 -->
 		<view class="ActivityCarousel">
-			<view class="uni-margin-wrap">
-				<swiper class="swiper" circular :indicator-dots="true" :autoplay="false" :interval="2000">
-					<swiper-item>
-						<view class="swiper-item">
-							<view class="activity-title">
-								<text class="title"> 四年级学霸养成营课程15节 </text>
-								<view class="text">
-									<text class="fontsize1">￥</text> <text class="fontsize2"> 1.1 </text> <text class="fontsize3"> ￥199 </text>
-								</view>
-
-								<view class="button">
-									我要学
-								</view>
-							</view>
-						</view>
-					</swiper-item>
-
-				</swiper>
-			</view>
+			<activity :activity='activity'>
+			</activity>
 		</view>
-
 	</view>
 
 </template>
 
 <script>
-	import tabLink from '@/components/homeCommon/tablink/index.vue'
+	import tabLink from '@/components/homeCommon/tablink/index.vue';
+	import activity from '@/components/homeCommon/activity/index.vue';
 	export default {
 		components: {
-			tabLink
+			tabLink,
+			activity
 		},
 		data() {
 			return {
@@ -62,7 +45,86 @@
 						title: '同步英语'
 					},
 				],
+				activity: [{
+						title: "四年级学霸养成营课程15节",
+						fontsize2: 1.1,
+						fontsize3: 199,
+						Avatar: [{
+								id: 0,
+								url: "../../static/home/Avatar0.jpg",
+							},
+							{
+								id: 1,
+								url: "../../static/home/Avatar1.jpg",
+							},
+							{
+								id: 2,
+								url: "../../static/home/Avatar2.jpg",
+							},
+						],
+						textFontsize: 30,
+						testHour: 1,
+						testMinute: 0,
+						testSecond: 2,
+						testHourday: 5,
+					},
+					{
+						title: "四年级数学课后习题精讲",
+						fontsize2: 9.9,
+						fontsize3: 199,
+						Avatar: [{
+								id: 0,
+								url: "../../static/home/Avatar0.jpg",
+							},
+							{
+								id: 1,
+								url: "../../static/home/Avatar1.jpg",
+							},
+							{
+								id: 2,
+								url: "../../static/home/Avatar2.jpg",
+							},
+						],
+						textFontsize: 15,
+						testHour: 1,
+						testMinute: 0,
+						testSecond: 2,
+						testHourday: 5,
+					},
+					{
+						title: "40天学会40首古诗",
+						fontsize2: 1.1,
+						fontsize3: 199,
+						Avatar: [{
+								id: 0,
+								url: "../../static/home/Avatar0.jpg",
+							},
+							{
+								id: 1,
+								url: "../../static/home/Avatar1.jpg",
+							},
+							{
+								id: 2,
+								url: "../../static/home/Avatar2.jpg",
+							},
+						],
+						textFontsize: 30,
+						testHour: 1,
+						testMinute: 0,
+						testSecond: 2,
+						testHourday: 5,
+					}
+
+				]
 			};
+		},
+		created() {
+			setTimeout(() => {
+				this.activity.testHourday
+				this.activity.testHour
+				this.activity.testMinute
+				this.activity.testSecond
+			}, 2000)
 		},
 		methods: {
 
@@ -91,108 +153,15 @@
 	.clearfix {
 		*zoom: 1;
 	}
-
-
 	#Home {
 		background-color: #f9f9f9;
-
 		.CourseEntrance {
 			background-image: url(../../static/Snipaste_2.jpg);
 			height: 150rpx;
 		}
-
 		.ActivityCarousel {
 			margin-top: 300rpx;
-
-			.uni-margin-wrap {
-				width: 690rpx;
-				margin: 0 30rpx;
-
-				.swiper {
-					height: 300rpx;
-
-					.swiper-item {
-						position: absolute;
-						display: block;
-
-						.activity-title {
-							background-color: #f96029;
-							color: #FFFFFF;
-							padding: 10rpx 35rpx;
-							width: 630rpx;
-							border-radius: 15rpx 15rpx 0 0 ;
-							.title {
-								font-size: 38rpx;
-								font-weight: 800;
-							}
-							.text {
-								padding-top: 15rpx;
-								.fontsize1 {
-									font-size: 22rpx;
-									font-weight: 600;
-								
-								}
-
-								.fontsize2 {
-									font-size: 60rpx;
-									font-weight: 600;
-									color: #fff512;
-									vertical-align: text-top;
-									padding:  15rpx;
-								}
-
-								.fontsize3 {
-									font-size: 22rpx;
-									font-weight: 600;
-									color: #fff512;
-								}
-							}
-							.button{
-								background-color: #fff512;
-								display: inline-block;
-								padding: 15rpx 45rpx;
-								border-radius: 45rpx;
-								color: #6d3e1c;
-								font-size: 20rpx;
-								position: absolute;
-								top: 55rpx;
-								right: 15rpx;
-
-							}
-							
-						}
-
-					}
-
-
-					.swiper-list {
-						margin-top: 40rpx;
-						margin-bottom: 0;
-					}
-
-					// .uni-common-mt {
-					// 	margin-top: 60rpx;
-					// 	position: relative;
-					// }
-
-					// .info {
-					// 	position: absolute;
-					// 	right: 20rpx;
-					// }
-
-					// .uni-padding-wrap {
-					// 	width: 550rpx;
-					// 	padding: 0 100rpx;
-					// }
-
-				}
-			}
-
-
-
-
-
-
+			
 		}
 
 	}

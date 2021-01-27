@@ -4,7 +4,7 @@
 			<text class="Bo"> 同步教辅 </text> <text class="Lo"> 全科全面的学习工具 </text>
 		</view>
 		<view class="CourseEntrance-box-list clearfix">
-			<view class="discipline " v-for="(item,index) in CourseEntranceData">
+			<view class="discipline " v-for="(item,index) in CourseEntranceData" :key="index">
 				<view :class="'line'+item.id">
 					<!-- <uniIcons class="input-uni-icon" :type="item.type" size="45" color="#fff" /> -->
 					<text class="iconfont fontstyle" :class="item.type"> </text>

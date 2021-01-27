@@ -45,7 +45,8 @@
 			}
 
 		}
-	],
+	    
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarBackgroundColor": "#01aefb",
