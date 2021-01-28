@@ -4,7 +4,6 @@
 
 		<!-- 课程入口 开始 -->
 		<view class="CourseEntrance clearfix">
-			<!--  分类 组件  -->
 			<tabLink :CourseEntranceData='CourseEntranceData' :id='id' :type='type' :title='title'>
 			</tabLink>
 		</view>
