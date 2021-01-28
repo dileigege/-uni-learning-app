@@ -1,26 +1,37 @@
 <template>
 	<view class="CourseEntrance-box clearfix">
-		<view class="CourseEntrance-box-Title">
-			<text class="Bo"> 同步教辅 </text> <text class="Lo"> 全科全面的学习工具 </text>
-		</view>
+		
+		<titleList :Bo="Bo" :Lo="Lo">
+		</titleList>
+		
 		<view class="CourseEntrance-box-list clearfix">
-			<view class="discipline " v-for="(item,index) in CourseEntranceData" :key="index">
-				<view :class="'line'+item.id">
-					<!-- <uniIcons class="input-uni-icon" :type="item.type" size="45" color="#fff" /> -->
-					<text class="iconfont fontstyle" :class="item.type"> </text>
-					<view class="taba"> {{item.title}} </view>
+			<view class="uni-flex uni-row">
+				<view class="text uni-flex" v-for="(item,index) in CourseEntranceData" :key="index">
+					<view :class="'line'+item.id">
+						<text class="iconfont fontstyle" :class="item.type"> </text>
+						<view class="taba"> {{item.title}} </view>
+					</view>
 				</view>
 			</view>
 		</view>
+
 	</view>
 </template>
 
 <script>
-	import uniIcons from '@/components/nav_top/uni-icons/uni-icons.vue'
+	import uniIcons from '@/components/nav_top/uni-icons/uni-icons.vue';
+	import titleList from '@/components/homeCommon/titletext/index.vue'
 
 	export default {
 		components: {
 			uniIcons,
+			titleList,
+		},
+		data() {
+			return {
+				Bo:'同步教辅',
+				Lo:'全科全面的学习工具'
+			}
 		},
 		props: {
 			CourseEntranceData: Array,
@@ -28,7 +39,7 @@
 			title: String,
 			id: Number
 		},
-		mounted(){
+		mounted() {
 			console.log(this.CourseEntranceData)
 		}
 	}
@@ -47,7 +58,7 @@
 		top: 10px;
 		left: 50%;
 		transform: translate(-50%);
-		padding: 25rpx 35rpx;
+		padding: 20rpx 35rpx;
 		border-radius: 15rpx;
 		box-shadow: 1px 2px 9px #e2e2e2;
 
@@ -68,20 +79,37 @@
 
 		.CourseEntrance-box-list {
 
-			.discipline {
-				float: left;
-				// background-color: #E5E5E5;
-				margin: 30rpx 15rpx;
-				
+			.flex-item {
+				width: 33.3%;
+				height: 200rpx;
+				text-align: center;
+				line-height: 200rpx;
+			}
+
+
+
+			.text {
+				margin: 15rpx 10rpx;
+				text-align: center;
+				color: #FFFFFF;
+				-webkit-flex: 1;
+				flex: 1;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-align-items: center;
+				align-items: center;
+				line-height: 1rem;
+
 				.line1 {
 					background-color: #bfa0fe;
 					text-align: center;
-					padding: 45rpx 32rpx;
+					padding: 35rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
-					.fontstyle{
+
+					.fontstyle {
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
@@ -93,12 +121,13 @@
 				.line2 {
 					background-color: #4da0ff;
 					text-align: center;
-					padding: 45rpx 32rpx;
+					padding: 35rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
-					.fontstyle{
+
+					.fontstyle {
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
@@ -109,12 +138,13 @@
 				.line3 {
 					background-color: #fdbb2f;
 					text-align: center;
-					padding: 45rpx 32rpx;
+					padding: 35rpx 32rpx;
 					font-size: 20rpx;
 					font-weight: 800;
 					border-radius: 10rpx;
 					box-shadow: 1px 2px 9px #c7c7c7;
-					.fontstyle{
+
+					.fontstyle {
 						color: #FFFFFF;
 						font-size: 90rpx;
 						font-weight: 300;
@@ -122,20 +152,79 @@
 					}
 				}
 
-
-
-				.taba {
-					color: #FFFFFF;
-					font-weight: 900;
-					font-size: 30rpx;
-					padding-top: 15rpx;
-				}
-
-
 			}
 
 
+
+			// .discipline {
+			// 	float: left;
+			// 	// background-color: #E5E5E5;
+			// 	margin: 30rpx 15rpx;
+
+			// 	.line1 {
+			// 		background-color: #bfa0fe;
+			// 		text-align: center;
+			// 		padding: 45rpx 32rpx;
+			// 		font-size: 20rpx;
+			// 		font-weight: 800;
+			// 		border-radius: 10rpx;
+			// 		box-shadow: 1px 2px 9px #c7c7c7;
+			// 		.fontstyle{
+			// 			color: #FFFFFF;
+			// 			font-size: 90rpx;
+			// 			font-weight: 300;
+			// 			text-shadow: 1px 2px 9px #8d78bf;
+			// 		}
+
+			// 	}
+
+			// 	.line2 {
+			// 		background-color: #4da0ff;
+			// 		text-align: center;
+			// 		padding: 45rpx 32rpx;
+			// 		font-size: 20rpx;
+			// 		font-weight: 800;
+			// 		border-radius: 10rpx;
+			// 		box-shadow: 1px 2px 9px #c7c7c7;
+			// 		.fontstyle{
+			// 			color: #FFFFFF;
+			// 			font-size: 90rpx;
+			// 			font-weight: 300;
+			// 			text-shadow: 1px 2px 9px #3b7fc7;
+			// 		}
+			// 	}
+
+			// 	.line3 {
+			// 		background-color: #fdbb2f;
+			// 		text-align: center;
+			// 		padding: 45rpx 32rpx;
+			// 		font-size: 20rpx;
+			// 		font-weight: 800;
+			// 		border-radius: 10rpx;
+			// 		box-shadow: 1px 2px 9px #c7c7c7;
+			// 		.fontstyle{
+			// 			color: #FFFFFF;
+			// 			font-size: 90rpx;
+			// 			font-weight: 300;
+			// 			text-shadow: 1px 2px 9px #d99e26;
+			// 		}
+			// 	}
+
+
+
+			// 	.taba {
+			// 		color: #FFFFFF;
+			// 		font-weight: 900;
+			// 		font-size: 30rpx;
+			// 		padding-top: 15rpx;
+			// 	}
+
+
+			// }
+
+
 		}
+
 		// .Moreubjects{
 		// 	position: absolute;
 		// 	right: 0;
