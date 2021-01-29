@@ -1,7 +1,7 @@
 <template>
 	<view class="GonggeLink">
 
-		<titleList :Bo="Bo" :Lo="Lo">
+		<titleList :Bo="Bo" :Lo="Lo" :show="show">
 		</titleList>
 		<view class="example-body">
 			<uni-grid :column="4" :show-border="false" :square="false" @change="change">
@@ -33,6 +33,7 @@
 			return {
 				Bo: '实用工具',
 				Lo: '小工具在手，问题不再有',
+				show : false
 			};
 		},
 		props: {
@@ -53,6 +54,7 @@
 		margin-top: 25rpx;
 		width: 100%;
 		background-color: #FFFFFF;
+		padding-bottom: 25rpx;
 		
 		.CourseEntrance-box-Title{
 			padding: 15rpx 45rpx;

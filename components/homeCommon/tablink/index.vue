@@ -1,14 +1,14 @@
 <template>
 	<view class="CourseEntrance-box clearfix">
 		
-		<titleList :Bo="Bo" :Lo="Lo">
+		<titleList :Bo="Bo" :Lo="Lo" :show="show">
 		</titleList>
 		
 		<view class="CourseEntrance-box-list clearfix">
 			<view class="uni-flex uni-row">
 				<view class="text uni-flex" v-for="(item,index) in CourseEntranceData" :key="index">
 					<view :class="'line'+item.id">
-						<text class="iconfont iconert fontstyle" :class="item.type"> </text>
+						<text class="iconfont fontstyle" :class="item.type"> </text>
 						<view class="taba"> {{item.title}} </view>
 					</view>
 				</view>
@@ -30,7 +30,8 @@
 		data() {
 			return {
 				Bo:'同步教辅',
-				Lo:'全科全面的学习工具'
+				Lo:'全科全面的学习工具',
+				show : false
 			}
 		},
 		props: {

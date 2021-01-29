@@ -1,6 +1,6 @@
 <template>
 	<view id="Home">
-		<!-- 课程入口 开始 -->
+		<!-- 同步教辅 开始 -->
 		<view class="CourseEntrance clearfix">
 			<tabLink :CourseEntranceData='CourseEntranceData' :id='id' :type='type' :title='title'>
 			</tabLink>
@@ -10,11 +10,18 @@
 			<activity :activity='activity'>
 			</activity>
 		</view>
-
-		<!-- 宫格  -->
+		
+		<!-- 实用工具  -->
 		<GonggeLink :list='list' @changeIndex='changeIndex'>
 		</GonggeLink>
-
+		
+		<!-- 课外学习  -->
+		<view class="learning">
+			<titleList :Bo="Bo" :Lo="Lo" :show="show">
+			</titleList>
+			
+		</view>
+		
 	</view>
 
 </template>
@@ -23,11 +30,14 @@
 	import tabLink from '@/components/homeCommon/tablink/index.vue';
 	import activity from '@/components/homeCommon/activity/index.vue';
 	import GonggeLink from '@/components/homeCommon/GonggeLink/index.vue';
+	import titleList from '@/components/homeCommon/titletext/index.vue'
 	export default {
 		components: {
 			tabLink,
 			activity,
-			GonggeLink
+			GonggeLink,
+			titleList
+			
 		},
 		data() {
 			return {
@@ -35,6 +45,9 @@
 				type: 'icon-shuxue',
 				title: '同步教辅',
 				index: 0,
+				Bo: '课外学习',
+				Lo: '爱探索未知的孩子最酷啦',
+				show: true,
 				CourseEntranceData: [{
 						id: 1,
 						type: 'icon-shuxue',
@@ -225,6 +238,13 @@
 
 		.ActivityCarousel {
 			margin-top: 320rpx;
+		}
+		.learning{
+			background-color: #FFFFFF;
+			.CourseEntrance-box-Title{
+				padding: 15rpx 45rpx;
+			}
+			
 		}
 
 
