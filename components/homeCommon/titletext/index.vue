@@ -3,13 +3,11 @@
 		<view class="fontTitle">
 			<text class="Bo"> {{Bo}} </text> <text class="Lo"> {{Lo}} </text>
 		</view>
-
 		<view class="fontButton" v-show="show" >
 			<text class="text">更多 </text>
 			<text class="iconfont fontButtonicon icon-chevron-right
 			"></text>
 		</view>
-
 	</view>
 </template>
 
