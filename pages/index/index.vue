@@ -1,7 +1,5 @@
 <template>
 	<view id="Home">
-
-
 		<!-- 课程入口 开始 -->
 		<view class="CourseEntrance clearfix">
 			<tabLink :CourseEntranceData='CourseEntranceData' :id='id' :type='type' :title='title'>
@@ -12,6 +10,11 @@
 			<activity :activity='activity'>
 			</activity>
 		</view>
+
+		<!-- 宫格  -->
+		<GonggeLink :list='list' @changeIndex='changeIndex'>
+		</GonggeLink>
+
 	</view>
 
 </template>
@@ -19,16 +22,19 @@
 <script>
 	import tabLink from '@/components/homeCommon/tablink/index.vue';
 	import activity from '@/components/homeCommon/activity/index.vue';
+	import GonggeLink from '@/components/homeCommon/GonggeLink/index.vue';
 	export default {
 		components: {
 			tabLink,
-			activity
+			activity,
+			GonggeLink
 		},
 		data() {
 			return {
 				id: 0,
 				type: 'icon-shuxue',
 				title: '同步教辅',
+				index: 0,
 				CourseEntranceData: [{
 						id: 1,
 						type: 'icon-shuxue',
@@ -114,6 +120,68 @@
 						testHourday: 5,
 					}
 
+				],
+				list: [{
+						url: 'icon-paizhao',
+						text: '拍照搜题',
+						badge: '0',
+						type: "primary",
+						fontColor: "#03AEFB",
+						bacColor:"#D7F3FF"
+					},
+					{
+						url: 'icon-jisuanqi',
+						text: '计算器',
+						badge: '1',
+						type: "success",
+						fontColor: "#4D9FFF",
+						bacColor:"#E9F6FC"
+					},
+					{
+						url: 'icon-chaxun',
+						text: '单词查询',
+						badge: '99',
+						type: "warning",
+						fontColor: "#FEBC30",
+						bacColor:"#FFF3D9"
+					},
+					{
+						url: 'icon-align-center',
+						text: '语文作文',
+						badge: '2',
+						type: "error",
+						fontColor: "#BEA0FE",
+						bacColor:"#F5F0FF",
+						
+					},
+					{
+						url: 'icon-maobi',
+						text: '古文助手',
+						fontColor: "#BEA0FE",
+						bacColor:"#F5F0FF"
+					},
+					{
+						url: 'icon-ad',
+						text: '英语作文',
+						fontColor: "#FEBC30",
+						bacColor:"#FFF3D9"
+					},
+					{
+						url: 'icon-shu',
+						text: '汉语字典',
+						fontColor: "#BEA0FE",
+						bacColor:"#F5F0FF"
+					},
+					{
+						url: 'icon-blackboard',
+						text: '心算练习',
+						fontColor: "#4D9FFF",
+						bacColor:"#E9F6FC"
+					},
+					{
+						url: '/static/c9.png',
+						text: 'Grid 9'
+					}
 				]
 			};
 		},
@@ -126,7 +194,17 @@
 			}, 2000)
 		},
 		methods: {
+			changeIndex(e) {
+				let {
+					index
+				} = e.detail
+				this.list[index].badge && this.list[index].badge++
 
+				uni.showToast({
+					title: `点击第${index+1}个宫格`,
+					icon: 'none'
+				})
+			},
 		}
 	}
 </script>
@@ -137,31 +215,18 @@
 	$fontColor:#999;
 	$fontBColor:#333;
 
-	/* 声明清除浮动的样式 */
-	.clearfix:before,
-	.clearfix:after {
-		content: "";
-		display: table;
-	}
-
-	.clearfix:after {
-		clear: both;
-	}
-
-	/* ie6 7 专门清除浮动的样式*/
-	.clearfix {
-		*zoom: 1;
-	}
 	#Home {
 		background-color: #f9f9f9;
+
 		.CourseEntrance {
 			background-image: url(../../static/Snipaste_2.jpg);
 			height: 150rpx;
 		}
+
 		.ActivityCarousel {
-			margin-top: 300rpx;
-			
+			margin-top: 320rpx;
 		}
+
 
 	}
 </style>

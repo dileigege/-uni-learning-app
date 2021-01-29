@@ -14,9 +14,11 @@
 
 <style lang="scss">
 	/* 官方css  */
-	// @import url("./common/css/uni.scss");
+	@import url("./common/css/uni.css");
 	/* 动画css  */
 	@import url("./common/css/animate.css");
-	/*  */
-	@import url("./common/css/icon.css")
+	/* 图标css */
+	@import url("./common/css/icon.css");
+	/* 自定义css  */
+	@import url("./common/css/style.scss");
 </style>

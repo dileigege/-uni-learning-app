@@ -7,7 +7,9 @@
 			<uni-grid :column="4" :show-border="false" :square="false" @change="change">
 				<uni-grid-item v-if="index < 8" v-for="(item ,index) in list" :index="index" :key="index">
 					<view class="grid-item-box">
-						<image class="image" :src="item.url" mode="aspectFill" />
+						<!-- <image class="image" :src="item.url" mode="aspectFill" /> -->
+						<!--  -->
+						<text class="iconfont fontbaler" :class="item.url" :style="{ color: item.fontColor, backgroundColor: item.bacColor}" ></text>
 						<text class="text">{{item.text}}</text>
 					</view>
 				</uni-grid-item>
@@ -39,11 +41,9 @@
 		},
 		methods: {
 			change(e) {
-				 let {index} = e.detail
-				 this.list[index].badge && this.list[index].badge++
-				 this.$emit("changeindex",index);
+				this.$emit("changeIndex", e);
 			},
-		
+
 		}
 	}
 </script>
@@ -53,7 +53,11 @@
 		margin-top: 25rpx;
 		width: 100%;
 		background-color: #FFFFFF;
-
+		
+		.CourseEntrance-box-Title{
+			padding: 15rpx 45rpx;
+		}
+		
 		.grid-item-box {
 			flex: 1;
 			/* #ifndef APP-NVUE */
@@ -63,16 +67,23 @@
 			align-items: center;
 			justify-content: center;
 			padding: 15px 0;
-		}
+			.fontbaler{
+				font-size: 45rpx;
+				line-height: 45rpx;
+				padding: 25rpx;
+				border-radius: 50%;
+				text-shadow: 1rpx 0 6rpx #efefef;
+			}
+			.text {
+				font-size: 26rpx;
+				margin-top: 10rpx;
+				color: #666666;
+			}
 
-		.text {
-			font-size: 26rpx;
-			margin-top: 10rpx;
-		}
-
-		.image {
-			width: 50rpx;
-			height: 50rpx;
+			.image {
+				width: 50rpx;
+				height: 50rpx;
+			}
 		}
 	}
 </style>

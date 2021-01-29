@@ -8,7 +8,7 @@
 			<view class="uni-flex uni-row">
 				<view class="text uni-flex" v-for="(item,index) in CourseEntranceData" :key="index">
 					<view :class="'line'+item.id">
-						<text class="iconfont fontstyle" :class="item.type"> </text>
+						<text class="iconfont iconert fontstyle" :class="item.type"> </text>
 						<view class="taba"> {{item.title}} </view>
 					</view>
 				</view>
@@ -41,6 +41,9 @@
 		},
 		mounted() {
 			console.log(this.CourseEntranceData)
+		},
+		methods: {
+		
 		}
 	}
 </script>
