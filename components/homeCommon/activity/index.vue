@@ -1,7 +1,7 @@
 <template>
 	<view class="uni-margin-wrap">
 		<swiper class="swiper" circular :indicator-dots="true" :autoplay="false" :interval="2000">
-			<swiper-item v-for="(item,index) in activity">
+			<swiper-item v-for="(item,index) in activity" :key='index'>
 				<view class="swiper-item">
 					<view class="activity-title">
 						<text class="title"> {{item.title}} </text>
@@ -15,7 +15,7 @@
 					</view>
 					<view class="activity-content">
 						<view class="Avatar">
-							<text v-for="(imgages,index) in item.Avatar">
+							<text v-for="(imgages,index) in item.Avatar" :key='index'>
 								<image class="img" :src="imgages.url" mode=""></image>
 							</text>
 							<text class="text"> 已服务超21.2万同学 </text>

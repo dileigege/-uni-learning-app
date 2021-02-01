@@ -24,38 +24,12 @@
 			<view class="learningLi">
 				<view class="TabButton">
 					<!-- tab 按钮  -->
-					<text class="button" :class="{active:item.active}" v-for="(item,index) in TabButton" :key="index" @click="getTabButton(item)">
-						{{item.text}}
-					</text>
-
-					<view class="LearnList uni-flex uni-row" v-for="(item,i) in sortL" :key="i+'data'">
-
-						<view class="text uni-flex Imge">
-							<image class="Imge" :src="item.url"></image>
-						</view>
-
-						<view class="uni-flex uni-column LearnList-right">
-							<view class="title">
-								<view class="titleBl">
-									{{item.titleBl}}
-								</view>
-
-								<text class="titleDescription"> {{item.smtitle}} </text>
-							</view>
-
-							<view class="price">
-								<text class="fontsize1">￥</text> <text class="fontsize2"> {{item.price}}</text> <text class="fontsize3">
-									￥{{item.originaLprice}} </text>
-							</view>
-
-							<view class="wobble">
-								{{item.learningNumer}}人已学
-							</view>
-
-						</view>
-					</view>
-
-
+					<TabButton :TabButton='TabButton' @getTabButton='getTabButton'>
+					</TabButton>
+					<!--  tab 列表 -->
+					<LearnList :sortL='sortL'>
+						
+					</LearnList>
 				</view>
 
 
@@ -67,16 +41,26 @@
 </template>
 
 <script>
+	// 同步教辅 
 	import tabLink from '@/components/homeCommon/tablink/index.vue';
+	// 课程活动轮播
 	import activity from '@/components/homeCommon/activity/index.vue';
+	// 实用工具
 	import GonggeLink from '@/components/homeCommon/GonggeLink/index.vue';
-	import titleList from '@/components/homeCommon/titletext/index.vue'
+	// 课外学习
+	import titleList from '@/components/homeCommon/titletext/index.vue';
+	import TabButton from '../../components/homeCommon/TabButton/tabButton.vue';
+	import LearnList from '../../components/homeCommon/TabButton/LearnList.vue'
+	
 	export default {
 		components: {
 			tabLink,
 			activity,
 			GonggeLink,
-			titleList
+			titleList,
+			TabButton,
+			LearnList,
+			
 
 		},
 		data() {
@@ -103,7 +87,8 @@
 						title: '同步英语'
 					},
 				],
-				activity: [{
+				activity: [
+					{
 						title: "四年级学霸养成营课程15节",
 						fontsize2: 1.1,
 						fontsize3: 199,
@@ -367,24 +352,6 @@
 
 				.TabButton {
 					padding-top: 25rpx;
-
-					.button {
-						padding: 10rpx 20rpx;
-						border-radius: 45rpx;
-						border: 1rpx solid #B3BFC3;
-						margin-left: 15rpx;
-						color: #B3BFC3;
-						font-size: 25rpx;
-					}
-
-					.active {
-						padding: 10rpx 20rpx;
-						border-radius: 45rpx;
-						background-color: #03AEFB;
-						border: 1rpx solid #03AEFB;
-						margin-left: 15rpx;
-						color: #FFFFFF;
-					}
 
 					.LearnList {
 						// background-color:#007AFF;
