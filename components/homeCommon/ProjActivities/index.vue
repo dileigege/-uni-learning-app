@@ -1,5 +1,5 @@
 <template>
-	<view class="ProjActivities">
+	<view class="">
 
 		<titleList :Bo="Bo" :Lo="Lo" :show="show">
 		</titleList>
@@ -62,6 +62,7 @@
 	}
 	
 	.Projectfer-box {
+		padding-bottom: 150rpx;
 		.scroll-view_H {
 			white-space: nowrap;
 			width: 100%;

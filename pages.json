@@ -5,37 +5,37 @@
 			"style": {
 				"navigationBarBackgroundColor": "#01aefb",
 				"backgroundColor": "#F8F8F8",
-				// "navigationStyle": "custom",
+				"navigationStyle": "custom"
 				// "transparent":"float",
-				"app-plus":{
-					// 导航栏配置
-					"titleNView":{
-						// "blurEffect":"light",
-						"backgroundImage":"/static/Snipaste_2.jpg",
-						"backgroundRepeat":"repeat",
-						// 搜索框 
-						"searchInput":{
-							"borderRadius": "45px",
-							"placeholder":"四年级学霸养成营课程",
-							"placeholderColor": "#fff",
-							"backgroundColor":"#46c4fd",
-							"disabled": true
-						},
-						// 按钮 button 
-						"buttons":[
-							{
-								"color":"#FFFFFF",
-								"colorPressed":"#46c4fd",
-								"float":"right",
-								"fontSize":"34px",
-								"width":"auto",
-								"fontSrc":"/static/iconfont.ttf",
-								"text":"\ue60f"
-							}
+				// "app-plus":{
+				// 	// 导航栏配置
+				// 	// "titleNView":{
+				// 	// 	// "blurEffect":"light",
+				// 	// 	"backgroundImage":"/static/Snipaste_2.jpg",
+				// 	// 	"backgroundRepeat":"repeat",
+				// 	// 	// 搜索框 
+				// 	// 	// "searchInput":{
+				// 	// 	// 	"borderRadius": "45px",
+				// 	// 	// 	"placeholder":"四年级学霸养成营课程",
+				// 	// 	// 	"placeholderColor": "#fff",
+				// 	// 	// 	"backgroundColor":"#46c4fd",
+				// 	// 	// 	"disabled": true
+				// 	// 	// },
+				// 	// 	// 按钮 button 
+				// 	// 	// "buttons":[
+				// 	// 	// 	{
+				// 	// 	// 		"color":"#FFFFFF",
+				// 	// 	// 		"colorPressed":"#46c4fd",
+				// 	// 	// 		"float":"right",
+				// 	// 	// 		"fontSize":"34px",
+				// 	// 	// 		"width":"auto",
+				// 	// 	// 		"fontSrc":"/static/iconfont.ttf",
+				// 	// 	// 		"text":"\ue60f"
+				// 	// 	// 	}
 							
-						]
-					}
-				}
+				// 	// 	// ]
+				// 	// }
+				// }
 			}
 		}, {
 			"path": "pages/login/login",

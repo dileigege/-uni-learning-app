@@ -1,5 +1,19 @@
 <template>
 	<view id="Home">
+		<!-- 头部搜索框  -->
+		<view class="search">
+			<view class="uni-flex uni-row">
+				<view class="user">
+					<image src="../../static/home/Avatar1.jpg" mode=""></image>
+					<text class="text"> 四年级 </text>
+					<text class="iconfont foter icon-chevron-down"></text>
+				</view>
+				<view class="imput">
+					<input class="uni-input" placeholder="四年级学霸养成营课程" disabled="disabled" placeholder-style="color:#fff" />
+					<text class="iconfont flip icon-search"></text>
+				</view>
+			</view>
+		</view>
 		<!-- 同步教辅 开始 -->
 		<view class="CourseEntrance clearfix">
 			<tabLink :CourseEntranceData='CourseEntranceData' :id='id' :type='type' :title='title'>
@@ -10,12 +24,10 @@
 			<activity :activity='activity'>
 			</activity>
 		</view>
-
-		<!-- 实用工具  -->
+		<!-- 实用工具 开始 -->
 		<GonggeLink :list='list' @changeIndex='changeIndex'>
 		</GonggeLink>
-
-		<!-- 课外学习  -->
+		<!-- 课外学习  开始-->
 		<view class="learning">
 			<!-- 列表 -->
 			<view class="learningLi">
@@ -31,17 +43,17 @@
 
 			</view>
 		</view>
-
-		<!-- 专题活动  -->
+		<!-- 专题活动 开始 -->
 		<view class="ProjectActivities">
 
 			<proj-activities :ProjectActivities='ProjectActivities'>
-
 			</proj-activities>
 
 		</view>
+		<!-- 底部导航 -->
+		<BottomNavigation >
+		</BottomNavigation>
 	</view>
-
 </template>
 
 <script>
@@ -52,10 +64,12 @@
 	// 实用工具
 	import GonggeLink from '@/components/homeCommon/GonggeLink/index.vue';
 	// 课外学习
-	import TabButton from '../../components/homeCommon/TabButton/tabButton.vue';
-	import LearnList from '../../components/homeCommon/TabButton/LearnList.vue';
+	import TabButton from '@/components/homeCommon/TabButton/tabButton.vue';
+	import LearnList from '@/components/homeCommon/TabButton/LearnList.vue';
 	// 专题活动
-	import ProjActivities from '../../components/homeCommon/ProjActivities/index.vue';
+	import ProjActivities from '@/components/homeCommon/ProjActivities/index.vue';
+	// 底部导航 
+	import BottomNavigation from '@/components/GlobalCommon/BottomNavigation/index.vue'
 
 	export default {
 		components: {
@@ -64,8 +78,8 @@
 			GonggeLink,
 			TabButton,
 			LearnList,
-			ProjActivities
-
+			ProjActivities,
+			BottomNavigation
 		},
 		data() {
 			return {
@@ -321,7 +335,8 @@
 						text: '暑假已到，跟同学们一起逛馆，你还等什么',
 						countdown: '08:45:27',
 					}
-				]
+				],
+
 			};
 		},
 		created() {
@@ -364,13 +379,78 @@
 	#Home {
 		background-color: #f9f9f9;
 
+		.search {
+			height: 80rpx;
+			background-image: url(../../static/Snipaste_2.jpg);
+			padding: 25rpx;
+			padding-bottom: 0;
+
+			.uni-flex {
+				.user {
+					width: 200rpx;
+					background-color: #69CFFD;
+					border-radius: 45rpx;
+					line-height: 0;
+
+					uni-image {
+						width: 65rpx;
+						height: 65rpx;
+						margin: 2rpx;
+						margin-right: 10rpx;
+						border-radius: 50%;
+						vertical-align: middle;
+					}
+
+					.text {
+						font-size: 25rpx;
+						line-height: 55rpx;
+						margin-right: 10rpx;
+						vertical-align: middle;
+						color: #FFFFFF;
+					}
+
+					.foter {
+						font-size: 30rpx;
+						vertical-align: middle;
+						color: #FFFFFF;
+
+					}
+				}
+
+				.imput {
+					-webkit-flex: 1;
+					flex: 1;
+					margin-left: 50rpx;
+
+					.uni-input {
+						padding: 10rpx;
+						padding-left: 35rpx;
+						border-radius: 50rpx;
+						background-color: #69CFFD;
+						color: #FFFFFF;
+						font-size: 25rpx;
+					}
+
+					.flip {
+						position: absolute;
+						top: 15rpx;
+						right: 50rpx;
+						color: #FFFFFF;
+						font-size: 50rpx;
+					}
+				}
+			}
+		}
+
 		.CourseEntrance {
 			background-image: url(../../static/Snipaste_2.jpg);
 			height: 150rpx;
+			position: relative;
 		}
 
 		.ActivityCarousel {
 			margin-top: 320rpx;
+			
 		}
 
 		.learning {
@@ -392,64 +472,12 @@
 
 		.ProjectActivities {
 			margin-top: 35rpx;
-
+			margin-bottom: 155rpx;
 			background-color: #FFFFFF;
 
-			.CourseEntrance-box-Title {
-				padding: 25rpx 40rpx;
-			}
 
-			.Projectfer-box {
-				.scroll-view_H {
-					white-space: nowrap;
-					width: 100%;
-				}
-
-				.scroll-view-item_H {
-					display: inline-block;
-					margin: 20rpx;
-					margin-left: 40rpx;
-					width: 550rpx;
-					font-size: 36rpx;
-					margin-top: 0;
-					padding-bottom: 25rpx;
-
-					box-shadow: 1rpx 2rpx 9rpx 3rpx #e5e5e5;
-					border-radius: 15rpx;
-
-					&:last-child {
-						margin-right: 40rpx;
-					}
-
-					.imges-view {
-						uni-image {
-							height: 250rpx;
-							width: 100%;
-							border-radius: 15rpx 15rpx 0 0;
-						}
-					}
-
-					.text-view {
-						font-size: 30rpx;
-						word-wrap: break-word;
-						word-break: break-all;
-						padding: 0 15rpx;
-						color: #333333;
-						font-weight: 300;
-						white-space: normal;
-					}
-
-					.countdown {
-						padding: 0 15rpx;
-						font-size: 25rpx;
-						padding-top: 10rpx;
-						color: #333333;
-						font-weight: 300;
-					}
-
-				}
-			}
 		}
 
+	
 	}
 </style>
