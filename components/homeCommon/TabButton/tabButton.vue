@@ -1,19 +1,25 @@
 <template>
 	<view>
+		<titleList :Bo="Bo" :Lo="Lo" :show="show">
+		</titleList>
 		<text class="button" :class="{active:item.active}" v-for="(item,index) in TabButton" :key="index" @click="getTabButton(item)">
 			{{item.text}}
 		</text>
+		
 	</view>
 </template>
 
 <script>
-	
+	import titleList from '@/components/homeCommon/titletext/index.vue';
 	export default {
+		components: {
+			titleList,
+		},
 		data() {
 			return {
-				Bo: '实用工具',
-				Lo: '小工具在手，问题不再有',
-				show: false
+				Bo: '课外学习',
+				Lo: '爱探索未知的孩子最酷啦',
+				show: true
 			};
 		},
 		props: {
@@ -30,6 +36,9 @@
 </script>
 
 <style lang="less">
+	.CourseEntrance-box-Title {
+		padding: 25rpx 20rpx;
+	}
 	.button {
 		padding: 10rpx 20rpx;
 		border-radius: 45rpx;

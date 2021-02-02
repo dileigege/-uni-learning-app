@@ -1,27 +1,33 @@
 <template>
-	<view class="LearnListConter">
-		<view class="LearnList uni-flex uni-row" v-for="(item,i) in sortL" :key="i+'data'">
-		
-			<view class="text uni-flex Imge">
-				<image class="Imge" :src="item.url"></image>
-			</view>
-		
-			<view class="uni-flex uni-column LearnList-right">
-				<view class="title">
-					<view class="titleBl">
-						{{item.titleBl}}
+	<view class="">
+		<view class="LearnListConter">
+			<view class="LearnList uni-flex uni-row" v-for="(item,i) in sortL" :key="i+'data'">
+				<view class="text uni-flex Imge">
+					<image class="Imge" :src="item.url"></image>
+				</view>
+				<view class="uni-flex uni-column LearnList-right">
+					<view class="title">
+						<view class="titleBl">
+							{{item.titleBl}}
+						</view>
+						<text class="titleDescription"> {{item.smtitle}} </text>
 					</view>
-					<text class="titleDescription"> {{item.smtitle}} </text>
+					<view class="price">
+						<text class="fontsize1">￥</text> <text class="fontsize2"> {{item.price}}</text> <text class="fontsize3">
+							￥{{item.originaLprice}} </text>
+					</view>
+					<view class="wobble">
+						{{item.learningNumer}}人已学
+					</view>
 				</view>
-				<view class="price">
-					<text class="fontsize1">￥</text> <text class="fontsize2"> {{item.price}}</text> <text class="fontsize3">
-						￥{{item.originaLprice}} </text>
-				</view>
-				<view class="wobble">
-					{{item.learningNumer}}人已学
-				</view>
+			</view>
+			
+			<view class="textfont">
+				探索全部科幻故事 
+				<text class="iconfont fontButtonicon icon-chevron-right"></text>
 			</view>
 		</view>
+		
 	</view>
 
 </template>
@@ -45,6 +51,7 @@
 </script>
 
 <style lang="less">
+	
 	.LearnList {
 		// background-color:#007AFF;
 		padding-top: 45rpx;
@@ -109,5 +116,14 @@
 		}
 	
 	}
-	
+	.textfont {
+		text-align: center;
+		font-size: 35rpx;
+		padding:   25rpx 0;
+		color: #03AEFB;
+		.fontButtonicon{
+			font-size: 35rpx;
+			color: #03AEFB;
+		}
+	}
 </style>
