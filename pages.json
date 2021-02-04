@@ -37,7 +37,8 @@
 				// 	// }
 				// }
 			}
-		}, {
+		},
+		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "",
@@ -46,6 +47,36 @@
 
 		}
 	    
+        ,{
+            "path" : "pages/search/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/course/course",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Question/Question",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

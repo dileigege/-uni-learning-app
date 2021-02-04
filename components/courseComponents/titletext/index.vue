@@ -1,14 +1,5 @@
 <template>
-	<view class="CourseEntrance-box-Title clearfix">
-		<view class="fontTitle">
-			<text class="Bo"> {{fontTitle.Bo}} </text> <text class="Lo"> {{fontTitle.Lo}} </text>
-		</view>
-		<view class="fontButton" v-show="fontTitle.show" >
-			<text class="text">更多 </text>
-			<text class="iconfont fontButtonicon icon-chevron-right
-			"></text>
-		</view>
-	</view>
+	
 </template>
 
 <script>
@@ -19,7 +10,20 @@
 			uniIcons,
 		},
 		props: {
-			fontTitle:Object,
+			// fontTitle:Array,
+		},
+		data() {
+			return {
+				fontTitle: [
+				  {
+					  fontTitle:{
+						  Bo: '语文课程',
+						  Lo: '爱探索未知的孩子最酷啦',
+						  show: false,
+					  }
+				  }
+				]
+			}
 		},
 		mounted() {
 
@@ -38,9 +42,10 @@
 			float: left;
 			.Bo {
 				font-weight: 800;
-				font-size: 38rpx;
-				color: $fontBColor;
+				font-size: 35rpx;
+				color: #676767;
 				padding-right: 25rpx;
+				
 			}
 
 			.Lo {

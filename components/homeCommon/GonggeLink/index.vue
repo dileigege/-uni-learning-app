@@ -1,7 +1,7 @@
 <template>
 	<view class="GonggeLink">
 
-		<titleList :Bo="Bo" :Lo="Lo" :show="show">
+		<titleList :fontTitle='fontTitle'>
 		</titleList>
 		<view class="example-body">
 			<uni-grid :column="4" :show-border="false" :square="false" @change="change">
@@ -31,9 +31,12 @@
 		},
 		data() {
 			return {
-				Bo: '实用工具',
-				Lo: '小工具在手，问题不再有',
-				show : false
+				fontTitle:{
+					Bo: '实用工具',
+					Lo: '小工具在手，问题不再有',
+					show : false
+				}
+				
 			};
 		},
 		props: {

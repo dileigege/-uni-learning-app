@@ -1,8 +1,8 @@
 <template>
 	<view class="CourseEntrance-box clearfix">
 		
-		<titleList :Bo="Bo" :Lo="Lo" :show="show">
-		</titleList>
+	<titleList :fontTitle='fontTitle'>
+	</titleList>
 		
 		<view class="CourseEntrance-box-list clearfix">
 			<view class="uni-flex uni-row">
@@ -29,9 +29,12 @@
 		},
 		data() {
 			return {
-				Bo:'同步教辅',
-				Lo:'全科全面的学习工具',
-				show : false
+				fontTitle:{
+					Bo:'同步教辅',
+					Lo:'全科全面的学习工具',
+					show : false
+				}
+		
 			}
 		},
 		props: {

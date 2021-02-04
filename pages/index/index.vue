@@ -30,8 +30,12 @@
 		<!-- 课外学习  开始-->
 		<view class="learning">
 			<!-- 列表 -->
+			<titleList :fontTitle='fontTitle'>
+			</titleList>
 			<view class="learningLi">
+
 				<view class="TabButton">
+
 					<!-- tab 按钮  -->
 					<TabButton :TabButton='TabButton' @getTabButton='getTabButton'>
 					</TabButton>
@@ -51,7 +55,7 @@
 
 		</view>
 		<!-- 底部导航 -->
-		<BottomNavigation >
+		<BottomNavigation>
 		</BottomNavigation>
 	</view>
 </template>
@@ -64,6 +68,7 @@
 	// 实用工具
 	import GonggeLink from '@/components/homeCommon/GonggeLink/index.vue';
 	// 课外学习
+	import titleList from '@/components/homeCommon/titletext/index.vue';
 	import TabButton from '@/components/homeCommon/TabButton/tabButton.vue';
 	import LearnList from '@/components/homeCommon/TabButton/LearnList.vue';
 	// 专题活动
@@ -79,7 +84,8 @@
 			TabButton,
 			LearnList,
 			ProjActivities,
-			BottomNavigation
+			BottomNavigation,
+			titleList
 		},
 		data() {
 			return {
@@ -87,6 +93,11 @@
 				type: 'icon-shuxue',
 				title: '同步教辅',
 				index: 0,
+				fontTitle: {
+					Bo: '课外学习',
+					Lo: '爱探索未知的孩子最酷啦',
+					show: true,
+				},
 				CourseEntranceData: [{
 						id: 1,
 						type: 'icon-shuxue',
@@ -322,18 +333,21 @@
 						url: '../../static/home/wallhaven-1k3ovv.jpg',
 						text: '秀出你的作文，一起参与活动赢，文具相机呀',
 						countdown: '08:45:27',
+						iscountdownTrue: true
 					},
 					{
 						id: 2,
 						url: '../../static/home/wallhaven-wqy6d7.jpg',
 						text: '小学宝线下积木PK大赛正式开始，快来一起玩吧',
 						countdown: '08:45:27',
+						iscountdownTrue: true
 					},
 					{
 						id: 3,
 						url: '../../static/home/wallhaven-e7ymvo.jpg',
 						text: '暑假已到，跟同学们一起逛馆，你还等什么',
 						countdown: '08:45:27',
+						iscountdownTrue: true
 					}
 				],
 
@@ -450,7 +464,7 @@
 
 		.ActivityCarousel {
 			margin-top: 320rpx;
-			
+
 		}
 
 		.learning {
@@ -478,6 +492,6 @@
 
 		}
 
-	
+
 	}
 </style>

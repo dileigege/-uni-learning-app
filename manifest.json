@@ -1,5 +1,5 @@
 {
-    "name" : "小学app",
+    "name" : "mimi",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -72,7 +72,18 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
-        "enable": false
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "hash",
+            "base" : ""
+        },
+        "devServer" : {
+            "https" : true
+        },
+        "title" : "",
+        "template" : "template.h5.html"
     }
 }
