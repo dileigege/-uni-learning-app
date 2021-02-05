@@ -27,6 +27,17 @@
 
 		<!-- 热门问答  -->
 		<view class="hotQuestion-hotTopic" v-for="(item,index) in hotQuestionHotTopic" :key='index'>
+			
+			<view class="" v-show="item.show == true">
+				<view class="HOT" v-if="item.objer == 0">
+					<text class="text"> HOT </text>
+					
+				</view>
+				<view class="NEW" v-else>
+					<text class="text">NEW</text>
+				</view>
+			</view>
+
 
 			<view class="hotQT-title  uni-flex uni-row full-justified" v-show="item.hotQTitle.sower == true">
 				<text class="text"> {{item.hotQTitle.Title}} </text>
@@ -117,7 +128,10 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:false,
+						objer: 0,
+						
 					},
 					{
 						id: 2,
@@ -129,7 +143,9 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:true,
+						objer: 1,
 					},
 					
 					{
@@ -142,7 +158,9 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:true,
+						objer: 0,
 					},
 					
 					{
@@ -155,7 +173,9 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:false,
+						objer: 0,
 					},
 					
 					{
@@ -167,7 +187,9 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:true,
+						objer: 1,
 					},
 					
 					{
@@ -179,7 +201,9 @@
 						hotQTListText: '很惊艳的那种，想让你快乐 但是不想让别人给你带来快乐，最近经常莫名的笑，原来是又想起你了。 ​​',
 						reply: 125,
 						comments: 900,
-						url: '../../static/home/wallhaven-dpgw2j.jpg'
+						url: '../../static/home/wallhaven-dpgw2j.jpg',
+						show:true,
+						objer: 0,
 					},
 				]
 			}
@@ -242,10 +266,41 @@
 
 		.hotQuestion-hotTopic {
 			padding: 15rpx 30rpx;
+			position: relative;
+			.HOT{
+				position: absolute;
+				top: 28rpx;
+				right:  0;
+				background-color: #f54736;
+				color: #FFFFFF;
+				padding: 0 20rpx;
+				border-radius: 50rpx 0 0 50rpx;
+				line-height: 50rpx;
+				.text{
+					color: #FFFFFF;
+					font-size: 25rpx;
+				}
+			}
+			.NEW{
+				position: absolute;
+				top: 28rpx;
+				right:  0;
+				background-color: #007AFF;
+				color: #FFFFFF;
+				padding: 0 20rpx;
+				border-radius: 50rpx 0 0 50rpx;
+				line-height: 50rpx;
+				.text{
+					color: #FFFFFF;
+					font-size: 25rpx;
+				}
+			}
+			
 
 			.hotQT-title {
 				padding-bottom: 15rpx;
-				border-bottom: 1rpx #e8e8e8 solid;
+				padding-top: 15rpx;
+				// border-bottom: 1rpx #e8e8e8 solid;
 
 				.fontButtonicon {
 					font-size: 30rpx;
