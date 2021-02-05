@@ -11,16 +11,23 @@
 						<image :src="item.url" mode=""></image>
 					</view>
 					<view class="text-view">
+						<text class="title" v-show="item.isboer == false">
+							{{item.title}}
+						</text>
 						<text class="font">
 							{{item.text}}
 						</text>
 					</view>
-					<view class="countdown" v-if="item.iscountdownTrue == true">
-						距活动结束:<text> {{item.countdown}} </text>
+					
+					<view v-show="item.isboer == true">
+						<view class="countdown" v-if="item.iscountdownTrue == true">
+							距活动结束:<text> {{item.countdown}} </text>
+						</view>
+						<view class="countdownTrue" v-else>
+							限时免费
+						</view>
 					</view>
-					<view class="countdownTrue" v-else>
-						限时免费
-					</view>
+					
 				</view>
 			</scroll-view>
 		</view>
@@ -68,7 +75,7 @@
 	}
 
 	.Projectfer-box {
-		padding-bottom: 150rpx;
+		// padding-bottom: 150rpx;
 
 		.scroll-view_H {
 			white-space: nowrap;
@@ -107,6 +114,11 @@
 				color: #333333;
 				font-weight: 300;
 				white-space: normal;
+				.title{
+					display: block;
+					font-size: 38rpx;
+					font-weight: 800;
+				}
 			}
 
 			.countdown {

@@ -328,26 +328,30 @@
 						url: "../../static/home/Avatar1.jpg",
 					},
 				],
+				
 				ProjectActivities: [{
 						id: 1,
 						url: '../../static/home/wallhaven-1k3ovv.jpg',
 						text: '秀出你的作文，一起参与活动赢，文具相机呀',
 						countdown: '08:45:27',
-						iscountdownTrue: true
+						iscountdownTrue: true,
+						isboer:true
 					},
 					{
 						id: 2,
 						url: '../../static/home/wallhaven-wqy6d7.jpg',
 						text: '小学宝线下积木PK大赛正式开始，快来一起玩吧',
 						countdown: '08:45:27',
-						iscountdownTrue: true
+						iscountdownTrue: true,
+						isboer:true
 					},
 					{
 						id: 3,
 						url: '../../static/home/wallhaven-e7ymvo.jpg',
 						text: '暑假已到，跟同学们一起逛馆，你还等什么',
 						countdown: '08:45:27',
-						iscountdownTrue: true
+						iscountdownTrue: true,
+						isboer:true
 					}
 				],
 
@@ -486,8 +490,9 @@
 
 		.ProjectActivities {
 			margin-top: 35rpx;
-			margin-bottom: 155rpx;
+			// margin-bottom: 155rpx;
 			background-color: #FFFFFF;
+			padding-bottom: 155rpx;
 
 
 		}

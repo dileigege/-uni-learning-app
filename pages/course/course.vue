@@ -461,5 +461,8 @@
 			}
 
 		}
+		.ProjectActivities{
+			padding-bottom: 150rpx;
+		}
 	}
 </style>

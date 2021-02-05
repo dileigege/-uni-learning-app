@@ -40,7 +40,7 @@
 						id: 4,
 						icon: 'icon-comment',
 						url: '',
-						text: '联系'
+						text: '问答'
 					},
 					{
 						id: 5,
