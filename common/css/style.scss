@@ -122,10 +122,10 @@
 	margin:  20rpx 0;
 }
 .pa-LR{
-	margin: 0 20rpx;
+	padding: 0 20rpx;
 }
 .pa-tB{
-	margin:  20rpx 0;
+	padding:  20rpx 0;
 }
 
 /*  -- 内外边距 -- */
@@ -452,3 +452,22 @@
 		-webkit-flex: 1;
 		flex: 1;
 	}
+	
+	//  左边图片 右边文字布局 
+	// 	uni-flex uni-row	
+	// uni-flex uni-column
+.flex-imges{
+
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+.flex-text{
+		-webkit-flex: 1;
+		flex: 1;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+	
+	
