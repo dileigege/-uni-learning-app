@@ -79,7 +79,29 @@
 			}
 
 		}
-	],
+	    ,
+		// 用户页面
+		{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,
+		// 计算器
+		{
+            "path" : "pages/index/calculator/calculator",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarBackgroundColor": "#01aefb",
@@ -108,7 +130,7 @@
 			"text": "问答"
 		},
 		{
-			"pagePath": "pages/Question/Question",
+			"pagePath": "pages/user/user",
 			"text": "我的"
 		}
 		]

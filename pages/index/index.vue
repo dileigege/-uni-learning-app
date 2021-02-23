@@ -8,7 +8,7 @@
 					<text class="text"> 四年级 </text>
 					<text class="iconfont foter icon-chevron-down"></text>
 				</view>
-				<view class="imput">
+				<view class="imput" @click="inputolink">
 					<input class="uni-input" placeholder="四年级学霸养成营课程" disabled="disabled" placeholder-style="color:#fff" />
 					<text class="iconfont flip icon-search"></text>
 				</view>
@@ -382,7 +382,13 @@
 			},
 			getTabButton(e) {
 				e.active = !e.active
+			},
+			inputolink(){
+				uni.switchTab({
+					url: '/pages/search/index'
+				});
 			}
+			
 		},
 		 onShow(){
 		    uni.hideTabBar()

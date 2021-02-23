@@ -3,7 +3,7 @@
 		<!-- 顶部导航条  -->
 		<view class="searchTop">
 			<view class="uni-flex uni-row">
-				<view class="return">
+				<view class="return" @click="change">
 					<text class="iconfont returnicon icon-left"></text>
 				</view>
 				<view class="input">
@@ -52,7 +52,11 @@
 			}
 		},
 		methods: {
-
+			change(){
+			uni.switchTab({
+				url: '/pages/index/index'
+			});
+			}
 		},
 		onShow(){
 		    uni.hideTabBar()

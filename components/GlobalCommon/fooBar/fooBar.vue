@@ -53,7 +53,7 @@
 						id: 4,
 						icon: 'copyright-mark',
 						name: '我的',
-						url: '/pages/index/index'
+						url: '/pages/user/user'
 					},
 				]
 			}
@@ -86,9 +86,9 @@
 						url: '/pages/Question/index'
 					});
 
-				} else if (index == 4) {
+				} else {
 					uni.switchTab({
-						url: '/pages/Question/Question'
+						url: '/pages/user/user'
 					});
 				}
 				this.$emit('toIndex', index)
