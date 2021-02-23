@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-icons": "/components/nav_top/uni-icons/uni-icons",
+    "title-list": "/components/homeCommon/titletext/index"
+  }
+}

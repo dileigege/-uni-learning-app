@@ -18,7 +18,7 @@
 		<!-- 提问  -->
 		<view class="bgc">
 		</view>
-		
+
 		<view class="quiz">
 
 			<view class="ask">
@@ -34,7 +34,6 @@
 				<text class='text'> 句子 </text>
 				<text class='text'> 文学 </text>
 			</view>
-
 			<view class="buttoniober clearfix">
 				<view class="text">
 					<text class="font mr-2">16K人关注</text> <text class="font mr-2"> 2条评论</text> <text class="font mr-2">3M次浏览</text>
@@ -43,7 +42,6 @@
 					我来回答
 				</view>
 			</view>
-
 		</view>
 
 		<!-- 回答 -->
@@ -54,7 +52,7 @@
 			<!-- boler 文章列表  -->
 			<boler :bolerData='bolerData'>
 			</boler>
-			
+
 			<!-- <view class="loadMore">
 				加载更多
 			</view> -->
@@ -66,8 +64,7 @@
 		</view>
 
 		<!-- 底部导航 -->
-		<BottomNavigation>
-		</BottomNavigation>
+		<foo-bar @toIndex="toIndex" :invitationtop='invitationtop'></foo-bar>
 	</view>
 </template>
 
@@ -75,15 +72,16 @@
 	import answerTop from '../../components/Questioncomponents/answerTop/index.vue'
 	import boler from '../../components/Questioncomponents/boler/index.vue'
 	// 底部导航
-	import BottomNavigation from '@/components/GlobalCommon/BottomNavigation/index.vue'
+	import fooBar from '@/components/GlobalCommon/fooBar/fooBar.vue';
 	export default {
 		components: {
 			answerTop,
 			boler,
-			BottomNavigation,
+			fooBar,
 		},
 		data() {
 			return {
+				invitationtop: 4,
 				fler: {
 					digital: 125
 				},
@@ -152,10 +150,19 @@
 				]
 			};
 		},
-		methods: {},
+		methods: {
+			toIndex(index) {
+				this.index = index
+				console.log(index)
+			},
+		},
 		mounted() {
 			console.log(this.bolerData)
-		}
+		},
+		onShow() {
+			uni.hideTabBar()
+		},
+
 	}
 </script>
 
@@ -178,6 +185,7 @@
 				line-height: 85rpx;
 				margin-left: 25rpx;
 				color: #333;
+
 				.returnicon {
 					font-size: 35rpx;
 				}
@@ -206,7 +214,8 @@
 				}
 			}
 		}
-		.bgc{
+
+		.bgc {
 			background-image: url(../../static/home/wallhaven-dpgw2j.jpg);
 			background-size: 100% 100%;
 			-webkit-filter: blur(10rpx);
@@ -289,11 +298,12 @@
 			background-color: #FFFFFF;
 			padding: 15rpx 25rpx;
 			margin-top: 10rpx;
-			.loadMore{
+
+			.loadMore {
 				height: 75rpx;
 				line-height: 75rpx;
 				text-align: center;
-				color:#666666;
+				color: #666666;
 				padding-top: 10rpx;
 				border-top: 1rpx solid #ebebeb;
 			}

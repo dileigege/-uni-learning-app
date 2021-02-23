@@ -1,0 +1,20 @@
+.BottomNavigation {
+  margin-top: 150rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #FFFFFF;
+}
+.BottomNavigation .Navigation .Navigationconer {
+  text-align: center;
+  padding: 15rpx 0;
+}
+.BottomNavigation .Navigation .Navigationconer .fontsize {
+  font-size: 45rpx;
+  color: #ABB7BC;
+  line-height: 1rpx;
+}
+.BottomNavigation .Navigation .Navigationconer .text {
+  color: #ABB7BC;
+}
+

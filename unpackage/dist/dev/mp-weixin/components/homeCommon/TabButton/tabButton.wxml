@@ -1,0 +1,1 @@
+<view><block wx:for="{{TabButton}}" wx:for-item="item" wx:for-index="index" wx:key="index"><text data-event-opts="{{[['tap',[['getTabButton',['$0'],[[['TabButton','',index]]]]]]]}}" class="{{['button',(item.active)?'active':'']}}" bindtap="__e">{{''+item.text+''}}</text></block></view>

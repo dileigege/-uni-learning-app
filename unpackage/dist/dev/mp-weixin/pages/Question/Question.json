@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "answer-top": "/components/Questioncomponents/answerTop/index",
+    "boler": "/components/Questioncomponents/boler/index",
+    "bottom-navigation": "/components/GlobalCommon/BottomNavigation/index"
+  }
+}

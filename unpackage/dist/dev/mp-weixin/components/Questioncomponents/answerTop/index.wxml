@@ -1,0 +1,1 @@
+<view class="answerTop  uni-flex  full-justified"><view class="text1">{{'回答 '+fler.digital+''}}</view><view class="text2">排序<text class="iconfont icon-chevron-down"></text></view></view>

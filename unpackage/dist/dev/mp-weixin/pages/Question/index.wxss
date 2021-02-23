@@ -1,0 +1,113 @@
+#QuestionHome .searchTop {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 1rpx 3rpx 9rpx #EEEEEE;
+}
+#QuestionHome .searchTop .return {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #333;
+}
+#QuestionHome .searchTop .return .returnicon {
+  font-size: 35rpx;
+}
+#QuestionHome .searchTop .title {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+#QuestionHome .searchTop .title .titlePiv {
+  text-align: center;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #333;
+}
+#QuestionHome .searchTop .button {
+  width: 200rpx;
+  line-height: 85rpx;
+  margin-right: 35rpx;
+  color: #666666;
+}
+#QuestionHome .searchTop .button .button1 {
+  float: left;
+  margin-right: 15rpx;
+}
+#QuestionHome .searchTop .button .buttonicon {
+  font-size: 30rpx;
+  line-height: 85rpx;
+}
+#QuestionHome .hotQuestion-hotTopic {
+  padding: 15rpx 30rpx;
+  position: relative;
+}
+#QuestionHome .hotQuestion-hotTopic .HOT {
+  position: absolute;
+  top: 28rpx;
+  right: 0;
+  background-color: #f54736;
+  color: #FFFFFF;
+  padding: 0 20rpx;
+  border-radius: 50rpx 0 0 50rpx;
+  line-height: 50rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .HOT .text {
+  color: #FFFFFF;
+  font-size: 25rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .NEW {
+  position: absolute;
+  top: 28rpx;
+  right: 0;
+  background-color: #007AFF;
+  color: #FFFFFF;
+  padding: 0 20rpx;
+  border-radius: 50rpx 0 0 50rpx;
+  line-height: 50rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .NEW .text {
+  color: #FFFFFF;
+  font-size: 25rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-title {
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-title .fontButtonicon {
+  font-size: 30rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-title .text {
+  font-size: 30rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-list-ler .hotQT-list-conter .img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 5rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-list-ler .hotQT-list-conter .text {
+  margin-left: 25rpx;
+  font-size: 28rpx;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-list-ler .hotQT-list-title {
+  font-size: 38rpx;
+  line-height: 85rpx;
+  font-weight: 300;
+  color: #666666;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-buttons {
+  border-bottom: 1rpx solid #e2e2e2;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-buttons .IconText {
+  font-size: 25rpx;
+  color: #666666;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-buttons .IconText .text {
+  font-size: 25rpx;
+  color: #d37b62;
+}
+#QuestionHome .hotQuestion-hotTopic .hotQT-buttons .Icons .Icon {
+  font-size: 50rpx;
+  line-height: 58rpx;
+  color: #666666;
+}
+

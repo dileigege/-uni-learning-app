@@ -84,8 +84,7 @@
 		</view>
 		
 		<!-- 底部导航 -->
-		<BottomNavigation>
-		</BottomNavigation>
+	<foo-bar @toIndex="toIndex" :invitationtop='invitationtop'></foo-bar>
 
 	</view>
 </template>
@@ -95,7 +94,7 @@
 	// import titleList from '@/components/courseComponents/titletext/index.vue';
 	import invitation from '../../components/courseComponents/invitation/invitation.vue';
 	// 底部导航
-	import BottomNavigation from '@/components/GlobalCommon/BottomNavigation/index.vue';
+	import fooBar from '@/components/GlobalCommon/fooBar/fooBar.vue';
 	// 专题活动
 	import ProjActivities from '@/components/homeCommon/ProjActivities/index.vue';
 	// 评分 
@@ -103,15 +102,15 @@
 	export default {
 		components: {
 			TabButton,
-			// titleList,
 			invitation,
-			BottomNavigation,
+			fooBar,
 			ProjActivities,
 			uniRate
 		},
 		data() {
 			return {
 				value: 2.5,
+				invitationtop:1,
 				TabButton: [{
 						id: 1,
 						text: "语文",
@@ -250,8 +249,15 @@
 		methods: {
 			getTabButton(e) {
 				e.active = !e.active
-			}
-		}
+			},
+			toIndex(index){
+				this.index = index
+				console.log(index)
+			},
+		},
+		onShow(){
+		    uni.hideTabBar()
+		},
 	}
 </script>
 

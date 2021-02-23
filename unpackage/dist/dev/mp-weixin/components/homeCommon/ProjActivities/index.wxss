@@ -1,0 +1,55 @@
+.CourseEntrance-box-Title {
+  padding: 25rpx 40rpx;
+}
+.Projectfer-box .scroll-view_H {
+  white-space: nowrap;
+  width: 100%;
+}
+.Projectfer-box .scroll-view-item_H {
+  display: inline-block;
+  margin: 20rpx;
+  margin-left: 40rpx;
+  width: 550rpx;
+  font-size: 36rpx;
+  margin-top: 0;
+  padding-bottom: 25rpx;
+  box-shadow: 1rpx 2rpx 9rpx 3rpx #e5e5e5;
+  border-radius: 15rpx;
+}
+.Projectfer-box .scroll-view-item_H:last-child {
+  margin-right: 40rpx;
+}
+.Projectfer-box .scroll-view-item_H .imges-view uni-image {
+  height: 250rpx;
+  width: 100%;
+  border-radius: 15rpx 15rpx 0 0;
+}
+.Projectfer-box .scroll-view-item_H .text-view {
+  font-size: 30rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0 15rpx;
+  color: #333333;
+  font-weight: 300;
+  white-space: normal;
+}
+.Projectfer-box .scroll-view-item_H .text-view .title {
+  display: block;
+  font-size: 38rpx;
+  font-weight: 800;
+}
+.Projectfer-box .scroll-view-item_H .countdown {
+  padding: 0 15rpx;
+  font-size: 25rpx;
+  padding-top: 10rpx;
+  color: #333333;
+  font-weight: 300;
+}
+.Projectfer-box .scroll-view-item_H .countdownTrue {
+  display: inline-block;
+  padding: 5rpx 15rpx;
+  background-color: #FFC2B9;
+  color: #FF5942;
+  margin-left: 15rpx;
+}
+

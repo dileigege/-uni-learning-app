@@ -1,0 +1,113 @@
+#Question {
+  background-color: #f9f9f9;
+  padding-bottom: 100rpx;
+}
+#Question .searchTop {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 1rpx 3rpx 9rpx #EEEEEE;
+}
+#Question .searchTop .return {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #333;
+}
+#Question .searchTop .return .returnicon {
+  font-size: 35rpx;
+}
+#Question .searchTop .title {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+#Question .searchTop .title .titlePiv {
+  text-align: center;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #333;
+}
+#Question .searchTop .button {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-right: 25rpx;
+  color: #333;
+}
+#Question .searchTop .button .buttonicon {
+  font-size: 30rpx;
+}
+#Question .bgc {
+  background-image: url(/static/home/wallhaven-dpgw2j.jpg);
+  background-size: 100% 100%;
+  -webkit-filter: blur(10rpx);
+  filter: blur(8rpx);
+  height: 450rpx;
+  position: relative;
+  top: 0;
+}
+#Question .quiz {
+  margin-top: 4rpx;
+  padding: 25rpx;
+  position: absolute;
+  top: 100rpx;
+}
+#Question .quiz .ask {
+  position: absolute;
+  top: 40rpx;
+  right: 0rpx;
+  background-color: #4CD964;
+  padding: 5rpx 15rpx;
+  font-size: 25rpx;
+  color: #FFFFFF;
+  border-radius: 45rpx 0 0 45rpx;
+}
+#Question .quiz .quizH1 {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #333333;
+}
+#Question .quiz .quizfin {
+  color: #666666;
+  padding-bottom: 25rpx;
+}
+#Question .quiz .label .text {
+  font-size: 25rpx;
+  background-color: #999999;
+  color: #f9f9f9;
+  padding: 10rpx 15rpx;
+  border-radius: 45rpx;
+  margin-right: 15rpx;
+}
+#Question .quiz .buttoniober {
+  margin: 25rpx 0;
+  border-radius: 5rpx;
+  border: 1rpx #999 dashed;
+  padding: 15rpx;
+}
+#Question .quiz .buttoniober .text {
+  float: left;
+}
+#Question .quiz .buttoniober .text .font {
+  font-size: 24rpx;
+  line-height: 25rpx;
+}
+#Question .quiz .buttoniober .button {
+  float: right;
+  font-size: 24rpx;
+  line-height: 55rpx;
+  color: #f0e2d5;
+}
+#Question .answer {
+  background-color: #FFFFFF;
+  padding: 15rpx 25rpx;
+  margin-top: 10rpx;
+}
+#Question .answer .loadMore {
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  color: #666666;
+  padding-top: 10rpx;
+  border-top: 1rpx solid #ebebeb;
+}
+

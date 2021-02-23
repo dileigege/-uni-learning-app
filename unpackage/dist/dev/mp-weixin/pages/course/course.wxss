@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+#course {
+  background-color: #f9f9f9;
+}
+#course .searchTop {
+  width: 100%;
+  background-color: #01AEFB;
+  box-shadow: 1rpx 3rpx 9rpx #00abef;
+}
+#course .searchTop .return {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #FFFFFF;
+}
+#course .searchTop .return .returnicon {
+  font-size: 35rpx;
+}
+#course .searchTop .title {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+#course .searchTop .title .titlePiv {
+  text-align: center;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #FFFFFF;
+}
+#course .searchTop .button {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-right: 25rpx;
+  color: #FFFFFF;
+}
+#course .searchTop .button .buttonicon {
+  font-size: 30rpx;
+}
+#course .courseTabTitle {
+  margin: 25rpx;
+}
+#course .courseTab {
+  margin-top: 25rpx;
+}
+#course .courseTab .TabButtonList {
+  padding-left: 15rpx;
+}
+#course .courselist {
+  background-color: #FFFFFF;
+  margin: 25rpx;
+  padding: 20rpx 25rpx;
+  border-radius: 5rpx;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontTitle {
+  float: left;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontTitle .Bo {
+  font-weight: 800;
+  font-size: 35rpx;
+  color: #676767;
+  padding-right: 25rpx;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontTitle .Lo {
+  font-weight: 600;
+  font-size: 25rpx;
+  color: #999;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontButton {
+  float: right;
+  padding-top: 15rpx;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontButton .text {
+  font-size: 25rpx;
+  color: #999;
+}
+#course .courselist .courselistTitle .CourseEntrance-box-Title .fontButton .fontButtonicon {
+  font-size: 25rpx;
+  color: #999;
+}
+#course .courselist .courseContent {
+  padding-top: 15rpx;
+}
+#course .courselist .courseContent .courseContentleft {
+  width: 200rpx;
+  height: 280rpx;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-right: 25rpx;
+}
+#course .courselist .courseContent .courseContentleft .courseIcon {
+  position: relative;
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 5rpx;
+}
+#course .courselist .courseContent .courseContentleft .courseIcon .text {
+  position: absolute;
+  top: 35rpx;
+  right: 45rpx;
+  padding-bottom: 15rpx;
+  font-size: 25rpx;
+  color: #FFFFFF;
+}
+#course .courselist .courseContent .courseContentleft .courseIcon .Icon {
+  position: absolute;
+  right: 15rpx;
+  bottom: 75rpx;
+  font-size: 135rpx;
+  line-height: 0;
+}
+#course .courselist .courseContent .courseContentleft .courseIcon .line {
+  width: 10rpx;
+  height: 280rpx;
+  background-color: #006bdc;
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+  line-height: 0rpx;
+}
+#course .courselist .courseContent .courseContreght {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+#course .courselist .courseContent .courseContreght .courseContreghtTitle {
+  color: #676767;
+  font-size: 38rpx;
+  font-weight: 800;
+}
+#course .courselist .courseContent .courseContreght .coursebrief {
+  font-size: 28rpx;
+  color: #999;
+}
+#course .courselist .courseContent .courseContreght .difficulty {
+  font-size: 28rpx;
+  color: #999;
+  line-height: 60rpx;
+}
+#course .courselist .courseContent .courseContreght .difficulty .text {
+  float: left;
+}
+#course .courselist .courseContent .courseContreght .difficulty .rate {
+  padding-top: 10rpx;
+  float: left;
+}
+#course .courselist .courseContent .courseContreght .button {
+  color: #666666;
+  margin-top: 15rpx;
+}
+#course .courselist .courseContent .courseContreght .button .text {
+  border: 1rpx solid #999999;
+  padding: 5rpx 15rpx;
+  border-radius: 50rpx;
+  margin-right: 15rpx;
+}
+#course .ProjectActivities {
+  padding-bottom: 150rpx;
+}
+

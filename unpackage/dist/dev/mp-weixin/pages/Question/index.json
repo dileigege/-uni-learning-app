@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "proj-activities": "/components/homeCommon/ProjActivities/index",
+    "bottom-navigation": "/components/GlobalCommon/BottomNavigation/index"
+  }
+}

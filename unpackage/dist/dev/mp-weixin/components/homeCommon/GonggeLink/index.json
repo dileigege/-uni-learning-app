@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-grid": "/components/nav_top/uni-grid/uni-grid",
+    "uni-grid-item": "/components/nav_top/uni-grid-item/uni-grid-item",
+    "title-list": "/components/homeCommon/titletext/index"
+  }
+}

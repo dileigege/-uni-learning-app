@@ -1,0 +1,1 @@
+<view class="invitation uni-flex uni-row" style="{{(invitation)}}"><text class="iconfont icon-hand-right left"></text><text class="conter" style="color:#333333;">{{''+invitation.conter+''}}</text><text class="iconfont icon-close"></text></view>

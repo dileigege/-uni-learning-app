@@ -1,0 +1,1 @@
+<view class="BottomNavigation"><view class="uni-flex uni-row Navigation"><block wx:for="{{NavigationData}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="Navigationconer" style="-webkit-flex:1;flex:1;"><text class="{{['iconfont fontsize',item.icon]}}"></text><view class="text">{{''+item.text+''}}</view></view></block></view></view>

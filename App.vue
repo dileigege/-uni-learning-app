@@ -21,4 +21,8 @@
 	@import url("./common/css/icon.css");
 	/* 自定义css  */
 	@import url("./common/css/style.scss");
+	
+	.uni-tabbar{
+		display: none;
+	}
 </style>

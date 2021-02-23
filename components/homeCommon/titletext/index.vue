@@ -5,8 +5,7 @@
 		</view>
 		<view class="fontButton" v-show="fontTitle.show" >
 			<text class="text">更多 </text>
-			<text class="iconfont fontButtonicon icon-chevron-right
-			"></text>
+			<text class="iconfont fontButtonicon icon-chevron-right"></text>
 		</view>
 	</view>
 </template>

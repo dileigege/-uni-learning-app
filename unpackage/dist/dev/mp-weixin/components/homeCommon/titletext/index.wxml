@@ -1,0 +1,1 @@
+<view class="CourseEntrance-box-Title clearfix"><view class="fontTitle"><text class="Bo">{{''+fontTitle.Bo+''}}</text><text class="Lo">{{''+fontTitle.Lo+''}}</text></view><view hidden="{{!(fontTitle.show)}}" class="fontButton"><text class="text">更多</text><text class="iconfont fontButtonicon icon-chevron-right"></text></view></view>

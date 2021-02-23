@@ -53,7 +53,10 @@
 		},
 		methods: {
 
-		}
+		},
+		onShow(){
+		    uni.hideTabBar()
+		},
 	}
 </script>
 

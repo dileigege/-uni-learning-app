@@ -1,0 +1,62 @@
+#search .searchTop {
+  width: 100%;
+  background-color: #01AEFB;
+  box-shadow: 1rpx 3rpx 9rpx #00abef;
+}
+#search .searchTop .return {
+  width: 50rpx;
+  line-height: 85rpx;
+  margin-left: 25rpx;
+  color: #FFFFFF;
+  font-size: 30rpx;
+}
+#search .searchTop .input {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+#search .searchTop .input .uni-input {
+  border-radius: 45rpx;
+  padding: 5rpx;
+  padding-left: 35rpx;
+  background-color: #69CFFD;
+  margin: 15rpx 10rpx;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  line-height: 85rpx;
+}
+#search .searchTop .button {
+  width: 100rpx;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  margin-left: 25rpx;
+  line-height: 90rpx;
+}
+#search .history {
+  padding: 0 35rpx;
+}
+#search .history .historyTitle {
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+#search .history .historyTitle .historyconter {
+  font-size: 35rpx;
+  font-weight: 800;
+  padding-top: 15rpx;
+  color: #333333;
+}
+#search .history .historyTitle .historyIcon {
+  font-size: 35rpx;
+  padding-top: 15rpx;
+}
+#search .history .historyLisButton .historyLisButtonli {
+  display: inline-block;
+  padding: 5rpx 25rpx;
+  border-radius: 50rpx;
+  margin: 10rpx;
+  font-size: 25rpx;
+  color: #666666;
+  background-color: #EFF4F7;
+}
+

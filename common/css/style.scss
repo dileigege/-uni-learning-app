@@ -436,9 +436,9 @@
 	}
 
 	/* ie6 7 专门清除浮动的样式*/
-	.clearfix {
-		*zoom: 1;
-	}
+	// .clearfix {
+	// 	*zoom: 1;
+	// }
 	
 	// 两端对齐 
 	// uni-flex uni-row
@@ -457,11 +457,10 @@
 	// 	uni-flex uni-row	
 	// uni-flex uni-column
 .flex-imges{
-
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-align-items: center;
-		align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
 	}
 .flex-text{
 		-webkit-flex: 1;

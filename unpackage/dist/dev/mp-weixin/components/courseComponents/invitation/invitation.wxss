@@ -1,0 +1,22 @@
+.invitation {
+  margin: 25rpx;
+  padding: 10rpx 25rpx;
+  border-radius: 5rpx;
+}
+.invitation .left {
+  display: inline-block;
+  width: 50rpx;
+  line-height: 55rpx;
+}
+.invitation .conter {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+  line-height: 55rpx;
+}
+.invitation .right {
+  display: inline-block;
+  width: 50rpx;
+  line-height: 55rpx;
+}
+

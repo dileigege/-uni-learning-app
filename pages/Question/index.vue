@@ -4,7 +4,9 @@
 		<view class="searchTop">
 			<view class="uni-flex uni-row">
 				<view class="title">
-					<text class="titlePiv"> LOGO </text>
+					<text class="titlePiv "> 
+					 <image class="img" src="../../static/publck/logo.png" mode=""></image>
+					 </text>
 				</view>
 				<view class="button clearfix ">
 					<view class="button1">
@@ -72,24 +74,25 @@
 
 		</view>
 
-		<!-- 底部导航 -->
-		<BottomNavigation>
-		</BottomNavigation>
+	<!-- 底部导航 -->
+	<foo-bar @toIndex="toIndex" :invitationtop='invitationtop'></foo-bar>
+	
 	</view>
 </template>
 
 <script>
 	// 专题活动
 	import ProjActivities from '@/components/homeCommon/ProjActivities/index.vue';
-	// 底部导航
-	import BottomNavigation from '@/components/GlobalCommon/BottomNavigation/index.vue'
+	// 底部导航 
+	import fooBar from '@/components/GlobalCommon/fooBar/fooBar.vue';
 	export default {
 		components: {
 			ProjActivities,
-			BottomNavigation,
+			fooBar,
 		},
 		data() {
 			return {
+				invitationtop:3,
 				ProjectActivities: [{
 						id: 1,
 						url: '../../static/home/wallhaven-1k3ovv.jpg',
@@ -209,8 +212,14 @@
 			}
 		},
 		methods: {
-
-		}
+			toIndex(index){
+				this.index = index
+				console.log(index)
+			},
+		},
+		onShow(){
+		    uni.hideTabBar()
+		},
 	}
 </script>
 
@@ -243,6 +252,11 @@
 					line-height: 85rpx;
 					margin-left: 25rpx;
 					color: #333;
+					.img{
+						margin-top: 25rpx;
+						width: 100rpx;
+						height: 60rpx;
+					}
 				}
 			}
 
@@ -251,8 +265,10 @@
 				line-height: 85rpx;
 				margin-right: 35rpx;
 				color: #666666;
+				margin-top: 15rpx;
 
 				.button1 {
+					
 					float: left;
 					margin-right: 15rpx;
 				}

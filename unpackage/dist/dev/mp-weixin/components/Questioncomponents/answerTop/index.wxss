@@ -1,0 +1,14 @@
+.answerTop {
+  background-color: #FFFFFF;
+  padding-bottom: 10rpx;
+}
+.answerTop .text1 {
+  color: #101010;
+  font-size: 25rpx;
+  line-height: 52rpx;
+}
+.answerTop .text2 {
+  color: #999898;
+  font-size: 28rpx;
+}
+

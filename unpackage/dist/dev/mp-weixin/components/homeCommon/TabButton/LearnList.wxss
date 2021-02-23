@@ -1,0 +1,59 @@
+.LearnList {
+  padding-top: 45rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.LearnList .uni-flex .Imge {
+  margin-left: 10rpx;
+  width: 200rpx;
+  height: 250rpx;
+  border-radius: 5rpx;
+}
+.LearnList .LearnList-right {
+  margin-left: 20rpx;
+}
+.LearnList .LearnList-right .title .titleBl {
+  font-size: 37rpx;
+  font-weight: 600;
+  line-height: 50rpx;
+}
+.LearnList .LearnList-right .title .titleDescription {
+  font-size: 18rpx;
+  color: #999999;
+}
+.LearnList .LearnList-right .price {
+  padding: 5rpx 0;
+}
+.LearnList .LearnList-right .price .fontsize1 {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #FF5942;
+}
+.LearnList .LearnList-right .price .fontsize2 {
+  font-size: 50rpx;
+  font-weight: 600;
+  color: #FF5942;
+  vertical-align: text-top;
+  padding: 15rpx;
+}
+.LearnList .LearnList-right .price .fontsize3 {
+  font-size: 22rpx;
+  font-weight: 600;
+  color: #C7C7C7;
+  vertical-align: bottom;
+}
+.LearnList .LearnList-right .wobble {
+  font-size: 20rpx;
+  color: #999999;
+}
+.textfont {
+  text-align: center;
+  font-size: 35rpx;
+  padding: 25rpx 0;
+  color: #03AEFB;
+}
+.textfont .fontButtonicon {
+  font-size: 35rpx;
+  color: #03AEFB;
+}
+

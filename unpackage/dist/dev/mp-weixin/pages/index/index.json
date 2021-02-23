@@ -1,8 +1,15 @@
 {
   "navigationBarBackgroundColor": "#01aefb",
   "backgroundColor": "#F8F8F8",
-  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "uni-icons": "/components/nav_top/uni-icons/uni-icons"
+    "tab-link": "/components/homeCommon/tablink/index",
+    "activity": "/components/homeCommon/activity/index",
+    "gongge-link": "/components/homeCommon/GonggeLink/index",
+    "tab-button": "/components/homeCommon/TabButton/tabButton",
+    "learn-list": "/components/homeCommon/TabButton/LearnList",
+    "proj-activities": "/components/homeCommon/ProjActivities/index",
+    "bottom-navigation": "/components/GlobalCommon/BottomNavigation/index",
+    "title-list": "/components/homeCommon/titletext/index"
   }
 }

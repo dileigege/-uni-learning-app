@@ -33,9 +33,7 @@
 			<titleList :fontTitle='fontTitle'>
 			</titleList>
 			<view class="learningLi">
-
 				<view class="TabButton">
-
 					<!-- tab 按钮  -->
 					<TabButton :TabButton='TabButton' @getTabButton='getTabButton'>
 					</TabButton>
@@ -43,20 +41,15 @@
 					<LearnList :sortL='sortL'>
 					</LearnList>
 				</view>
-
-
 			</view>
 		</view>
 		<!-- 专题活动 开始 -->
 		<view class="ProjectActivities">
-
 			<proj-activities :ProjectActivities='ProjectActivities'>
 			</proj-activities>
-
 		</view>
 		<!-- 底部导航 -->
-		<BottomNavigation>
-		</BottomNavigation>
+		<foo-bar @toIndex="toIndex"  :invitationtop='invitationtop'></foo-bar>
 	</view>
 </template>
 
@@ -74,7 +67,7 @@
 	// 专题活动
 	import ProjActivities from '@/components/homeCommon/ProjActivities/index.vue';
 	// 底部导航 
-	import BottomNavigation from '@/components/GlobalCommon/BottomNavigation/index.vue'
+	import fooBar from '@/components/GlobalCommon/fooBar/fooBar.vue';
 
 	export default {
 		components: {
@@ -84,8 +77,9 @@
 			TabButton,
 			LearnList,
 			ProjActivities,
-			BottomNavigation,
-			titleList
+			fooBar,
+			titleList,
+		
 		},
 		data() {
 			return {
@@ -93,6 +87,7 @@
 				type: 'icon-shuxue',
 				title: '同步教辅',
 				index: 0,
+				invitationtop:0,
 				fontTitle: {
 					Bo: '课外学习',
 					Lo: '爱探索未知的孩子最酷啦',
@@ -366,6 +361,10 @@
 			}, 2000)
 		},
 		methods: {
+			toIndex(index){
+				this.index = index
+				console.log(index)
+			},
 			scroll: function(e) {
 				console.log(e)
 				this.old.scrollTop = e.detail.scrollTop
@@ -384,7 +383,10 @@
 			getTabButton(e) {
 				e.active = !e.active
 			}
-		}
+		},
+		 onShow(){
+		    uni.hideTabBar()
+		},
 	}
 </script>
 
@@ -393,7 +395,10 @@
 	$bgcColor:#fff;
 	$fontColor:#999;
 	$fontBColor:#333;
-
+uni-tabbar{
+		display: none !important;
+	}
+// uni-tabbar.uni-tabbar-bottom .uni-tabbar
 	#Home {
 		background-color: #f9f9f9;
 

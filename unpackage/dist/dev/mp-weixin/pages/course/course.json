@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tab-button": "/components/homeCommon/TabButton/tabButton",
+    "invitation": "/components/courseComponents/invitation/invitation",
+    "bottom-navigation": "/components/GlobalCommon/BottomNavigation/index",
+    "proj-activities": "/components/homeCommon/ProjActivities/index",
+    "uni-rate": "/components/nav_top/uni-rate/uni-rate"
+  }
+}
